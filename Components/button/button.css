@@ -1,0 +1,231 @@
+@import url(../Shared/colors.css);
+@import url(../Shared/reset.css);
+
+.btn-filled-red,
+.btn-filled-green,
+.btn-filled-blue,
+.btn-filled-purple,
+.btn-filled-orange,
+.btn-filled-pink,
+.btn-filled-yellow,
+.btn-Outlined-red,
+.btn-Outlined-green,
+.btn-Outlined-blue,
+.btn-Outlined-purple,
+.btn-Outlined-orange,
+.btn-Outlined-pink,
+.btn-Outlined-yellow,
+.btn-link {
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: unset;
+    transition: all 0.15s ease-in-out;
+    font-weight: 600;
+}
+
+.btn-link {
+    color: var(--blue-600);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+
+.btn-filled-red,
+.btn-filled-green,
+.btn-filled-blue,
+.btn-filled-purple,
+.btn-filled-orange,
+.btn-filled-pink,
+.btn-filled-yellow,
+.btn-Outlined-red,
+.btn-Outlined-green,
+.btn-Outlined-blue,
+.btn-Outlined-purple,
+.btn-Outlined-orange,
+.btn-Outlined-pink,
+.btn-Outlined-yellow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--dark);
+    border-radius: 3.5px;
+    min-height: 40px;
+    padding: 0.8em;
+}
+
+.btn-filled-red,
+.icon-btn-red {
+    background: var(--red-400);
+    color: var(--light);
+}
+
+.btn-filled-red:hover,
+.btn-Outlined-red:hover,
+.icon-btn-red:hover {
+    background: var(--red-600);
+}
+
+.btn-filled-red:active,
+.btn-Outlined-red:active,
+.icon-btn-red:active {
+    background: var(--red-500);
+}
+
+.btn-filled-green,
+.icon-btn-green {
+    background: var(--green-400);
+}
+
+.btn-filled-green:hover,
+.btn-Outlined-green:hover,
+.icon-btn-green:hover {
+    background: var(--green-600);
+}
+
+.btn-filled-green:active,
+.btn-Outlined-green:active,
+.icon-btn-green:active {
+    background: var(--green-500);
+}
+
+.btn-filled-blue,
+.icon-btn-blue {
+    background: var(--blue-400);
+}
+
+.btn-filled-blue:hover,
+.btn-Outlined-blue:hover,
+.icon-btn-blue:hover {
+    background: var(--blue-600);
+}
+
+.btn-filled-blue:active,
+.btn-Outlined-blue:active,
+.icon-btn-blue:active {
+    background: var(--blue-500);
+}
+
+.btn-filled-purple,
+.icon-btn-purple {
+    background: var(--purple-400);
+    color: var(--light);
+}
+
+.btn-filled-purple:hover,
+.btn-Outlined-purple:hover,
+.icon-btn-purple:hover {
+    background: var(--purple-600);
+}
+
+.btn-filled-purple:active,
+.btn-Outlined-purple:active,
+.icon-btn-purple:active {
+    background: var(--purple-500);
+}
+
+.btn-filled-orange,
+.icon-btn-orange {
+    background: var(--orange-400);
+}
+
+.btn-filled-orange:hover,
+.btn-Outlined-orange:hover,
+.icon-btn-orange:hover {
+    background: var(--orange-600);
+}
+
+.btn-filled-orange:active,
+.btn-Outlined-orange:active,
+.icon-btn-orange:active {
+    background: var(--orange-500);
+}
+
+.btn-filled-pink,
+.icon-btn-pink {
+    background: var(--pink-400);
+    color: var(--light);
+}
+
+.btn-filled-pink:hover,
+.btn-Outlined-pink:hover,
+.icon-btn-pink:hover {
+    background: var(--pink-600);
+}
+
+.btn-filled-pink:active,
+.btn-Outlined-pink:active,
+.icon-btn-pink:active {
+    background: var(--pink-500);
+}
+
+.btn-filled-yellow,
+.icon-btn-yellow {
+    background: var(--yellow-400);
+}
+
+.btn-filled-yellow:hover,
+.btn-Outlined-yellow:hover,
+.icon-btn-yellow:hover {
+    background: var(--yellow-600);
+}
+
+.btn-filled-yellow:active,
+.btn-Outlined-yellow:active,
+.icon-btn-yellow:active {
+    background: var(--yellow-500);
+}
+
+.btn-Outlined-red {
+    border: var(--red-400) solid 2px;
+}
+
+.btn-Outlined-green {
+    border: var(--green-400) solid 2px;
+}
+
+.btn-Outlined-blue {
+    border: var(--blue-400) solid 2px;
+}
+
+.btn-Outlined-purple {
+    border: var(--purple-400) solid 2px;
+}
+
+.btn-Outlined-purple:hover {
+    color: var(--light);
+}
+
+.btn-Outlined-orange {
+    border: var(--orange-400) solid 2px;
+}
+
+.btn-Outlined-pink {
+    border: var(--pink-400) solid 2px;
+}
+
+.btn-Outlined-pink:hover {
+    color: var(--light);
+}
+
+.btn-Outlined-yellow {
+    border: var(--yellow-400) solid 2px;
+}
+
+.icon-btn-red,
+.icon-btn-blue,
+.icon-btn-purple,
+.icon-btn-orange,
+.icon-btn-pink,
+.icon-btn-green,
+.icon-btn-yellow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 3em;
+    min-height: 3em;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    border: 0;
+}
