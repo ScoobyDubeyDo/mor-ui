@@ -1,42 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./button.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
+        <title>MOR | Button</title>
+    </head>
+    <body>
+        <nav class="appbar-fixed">
+            <span class="logo"><img src="/images/text-logo.png" /></span>
+            <span class="links">
+                <a href="#" class="social-links"
+                    ><i class="fab fa-github-square"></i
+                ></a>
+                <a href="#" class="social-links"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-links"
+                    ><i class="fab fa-twitter-square"></i
+                ></a>
+                <a href="#" class="ham-burger"><i class="fa fa-bars"></i></a>
+            </span>
+        </nav>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./button.css" />
-    <script src="https://kit.fontawesome.com/0c3127d83e.js" crossorigin="anonymous"></script>
-    <title>MOR | Button</title>
-</head>
-
-<body>
-    <button class="btn-filled-red">CLICK</button>
-    <button class="btn-filled-green">
-        CLICK<i class="fa fa-home"></i>
-    </button>
-    <button class="btn-filled-blue">CLICK</button>
-    <button class="btn-filled-purple">CLICK</button>
-    <button class="btn-filled-orange">CLICK</button>
-    <button class="btn-filled-pink">CLICK</button>
-    <button class="btn-filled-yellow">CLICK</button>
-    <button class="btn-Outlined-red">CLICK</button>
-    <button class="btn-Outlined-green">CLICK</button>
-    <button class="btn-Outlined-blue">CLICK</button>
-    <button class="btn-Outlined-purple">CLICK</button>
-    <button class="btn-Outlined-orange">CLICK</button>
-    <button class="btn-Outlined-pink">
-        <i class="fa fa-home"></i> CLICK
-    </button>
-    <button class="btn-Outlined-yellow">CLICK</button>
-    <button class="icon-btn-red"><i class="fa fa-home"></i></button>
-    <button class="icon-btn-green"><i class="fa fa-home"></i></button>
-    <button class="icon-btn-blue"><i class="fa fa-home"></i></button>
-    <button class="icon-btn-purple"><i class="fa fa-home"></i></button>
-    <button class="icon-btn-orange"><i class="fa fa-home"></i></button>
-    <button class="icon-btn-pink"><i class="fa fa-home"></i></button>
-    <button class="icon-btn-yellow"><i class="fa fa-home"></i></button>
-    <button class="btn-link">Click</button>
-</body>
-
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <li class="list-items-hover list-active">Button</li>
+                    <li class="list-items-hover">Avatar</li>
+                    <li class="list-items-hover">Badge</li>
+                    <li class="list-items-hover">Alert</li>
+                    <li class="list-items-hover">Card</li>
+                    <li class="list-items-hover">Image</li>
+                    <li class="list-items-hover">Input</li>
+                    <li class="list-items-hover">Modal</li>
+                    <li class="list-items-hover">Rating</li>
+                    <li class="list-items-hover">Toast</li>
+                    <li class="list-items-hover">Slider</li>
+                    <li class="list-items-hover">Lists</li>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Buttons</h1>
+                <p>
+                    The buttons communicate actions that users can perform. They
+                    are generally positioned in your user interface, in places
+                    like:
+                </p>
+                <ui class="margin-left">
+                    <li>Modals</li>
+                    <li>Forms</li>
+                    <li>Cards</li>
+                    <li>Toolbars</li>
+                </ui>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Filled button</h2>
+                <p>
+                    The complete buttons are of high importance, distinguished
+                    by their use of elevation and infill. They include actions
+                    that are primal to your application.
+                </p>
+                <div class="example-div">
+                    <button class="btn-filled-red">red</button>
+                    <button class="btn-filled-green">green</button>
+                    <button class="btn-filled-blue">blue</button>
+                    <button class="btn-filled-purple">purple</button>
+                    <button class="btn-filled-orange">orange</button>
+                    <button class="btn-filled-pink">pink</button>
+                    <button class="btn-filled-yellow">yellow</button>
+                </div>
+                <div class="code-snippet">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed/z4lQk4Bu72FngAby6Xwl"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Outlined button</h2>
+                <p>
+                    The underlined buttons are moderate accented buttons. They
+                    contain actions that are significant but are not the primary
+                    action within an application.
+                </p>
+                <div class="example-div">
+                    <button class="btn-Outlined-red">red</button>
+                    <button class="btn-Outlined-green">green</button>
+                    <button class="btn-Outlined-blue">blue</button>
+                    <button class="btn-Outlined-purple">purple</button>
+                    <button class="btn-Outlined-orange">orange</button>
+                    <button class="btn-Outlined-pink">pink</button>
+                    <button class="btn-Outlined-yellow">yellow</button>
+                </div>
+                <div class="code-snippet">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=sharp&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-Outlined-red%2522%253Ered%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-green%2522%253Egreen%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-blue%2522%253Eblue%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-purple%2522%253Epurple%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-orange%2522%253Eorange%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-pink%2522%253Epink%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-yellow%2522%253Eyellow%253C%252Fbutton%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Icon button</h2>
+                <p>
+                    The icon buttons are generally located in the appbar and
+                    toolbar of the applications. Icon buttonsare also
+                    appropriate for toggle buttons that allow you to select or
+                    deselect a single selection, such as adding or deleting a
+                    star to an element.
+                </p>
+                <small
+                    >These icon buttons can also be use as a Floating Action
+                    Button</small
+                >
+                <div class="example-div">
+                    <button class="icon-btn-red">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <button class="icon-btn-green">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <button class="icon-btn-blue">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <button class="icon-btn-purple">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <button class="icon-btn-orange">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <button class="icon-btn-pink">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <button class="icon-btn-yellow">
+                        <i class="fa fa-home"></i>
+                    </button>
+                </div>
+                <div class="code-snippet">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=sharp&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522icon-btn-red%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn-green%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn-blue%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn-purple%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn-orange%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn-pink%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn-yellow%2522%253E%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Buttons with icons and label</h2>
+                <p>
+                    Sometimes you might want to have icons for certain buttons
+                    to enhance the application's UX as we recognize the logos
+                    more easily than simple text. For example, if you have a
+                    remove button, you can label it with a trash can icon.
+                </p>
+                <small
+                    >We don't have any additional classes to implement this
+                    feature, just add your icon before or after the button text
+                    and you are ready to go.</small
+                >
+                <div class="example-div">
+                    <button class="btn-Outlined-pink">
+                        pink<i class="fa fa-home"></i>
+                    </button>
+                    <button class="btn-filled-red">
+                        <i class="fa fa-home"></i>red
+                    </button>
+                    <button class="btn-Outlined-purple">
+                        purple<i class="fa fa-home"></i>
+                    </button>
+                    <button class="btn-filled-green">
+                        green<i class="fa fa-home"></i>
+                    </button>
+                    <button class="btn-Outlined-orange">
+                        <i class="fa fa-home"></i>orange
+                    </button>
+                    <button class="btn-filled-blue">
+                        <i class="fa fa-home"></i>blue
+                    </button>
+                    <button class="btn-Outlined-yellow">
+                        <i class="fa fa-home"></i>yellow
+                    </button>
+                </div>
+                <div class="code-snippet">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=sharp&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-Outlined-pink%2522%253Epink%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-filled-red%2522%253E%253Csvg%253E%253C%252Fsvg%253Ered%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-purple%2522%253Epurple%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-filled-green%2522%253Egreen%253Csvg%253E%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-orange%2522%253E%253Csvg%253E%253C%252Fsvg%253Eorange%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-filled-blue%2522%253E%253Csvg%253E%253C%252Fsvg%253Eblue%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-Outlined-yellow%2522%253E%253Csvg%253E%253C%252Fsvg%253Eyellow%253C%252Fbutton%253E%2509"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Link buttons</h2>
+                <p>
+                    Links are accessible elements used primarily for navigation.
+                    This component is styled to resemble a hyperlink.
+                </p>
+                <div class="example-div">
+                    <button class="btn-link">link</button>
+                </div>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=sharp&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-link%2522%253Elink%253C%252Fbutton%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-github-square"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-twitter-square"></i
+                    ></a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
