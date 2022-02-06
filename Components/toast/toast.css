@@ -1,0 +1,89 @@
+@import url(../Shared/reset.css);
+@import url(../button/button.css);
+
+.toast-right-red,
+.toast-right-green,
+.toast-right-blue,
+.toast-right-orange,
+.toast-left-red,
+.toast-left-green,
+.toast-left-blue,
+.toast-left-orange,
+.toast-center-red,
+.toast-center-green,
+.toast-center-blue,
+.toast-center-orange {
+    min-width: 20rem;
+    min-height: 3rem;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-radius: 5px;
+    bottom: 1rem;
+}
+
+.toast-right-red,
+.toast-right-green,
+.toast-right-blue,
+.toast-right-orange {
+    right: 1rem;
+}
+
+.toast-left-red,
+.toast-left-green,
+.toast-left-blue,
+.toast-left-orange {
+    left: 1rem;
+}
+
+.toast-center-red,
+.toast-center-green,
+.toast-center-blue,
+.toast-center-orange {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toast-right-red,
+.toast-left-red,
+.toast-center-red {
+    color: var(--light);
+    background: var(--red-400);
+    border-left: 10px solid var(--red-600);
+}
+
+.toast-right-green,
+.toast-left-green,
+.toast-center-green {
+    color: var(--light);
+    background: var(--green-400);
+    border-left: 10px solid var(--green-600);
+}
+
+.toast-right-orange,
+.toast-left-orange,
+.toast-center-orange {
+    color: var(--dark);
+    background: var(--orange-400);
+    border-left: 10px solid var(--orange-600);
+}
+
+.toast-right-blue,
+.toast-left-blue,
+.toast-center-blue {
+    color: var(--light);
+    background: var(--blue-400);
+    border-left: 10px solid var(--blue-600);
+}
+
+.auto-close-toast {
+    display: none;
+}
+
+.toast-text {
+    max-width: 60%;
+    font-size: 20px;
+}
