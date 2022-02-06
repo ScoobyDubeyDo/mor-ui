@@ -1,0 +1,11 @@
+@import url(/Components/Shared/reset.css);
+.responsive-round-image,
+.responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.responsive-round-image {
+    border-radius: 50%;
+}
