@@ -5,26 +5,112 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./toast.css" />
+        <link rel="stylesheet" href="/Components/button/button.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
         <title>MOR | Toast</title>
     </head>
     <body>
-        <div class="toast-left-blue auto-close-toast">
-            <p class="toast-text">Message!!!!</p>
-            <button class="btn-filled-blue">undo</button>
-        </div>
-        <div class="toast-center-red">
-            <p class="toast-text">Message!!!!</p>
-            <button class="btn-filled-red">undo</button>
-        </div>
-        <div class="toast-right-green">
-            <p class="toast-text">Message!!!!</p>
-            <button class="btn-filled-green">undo</button>
-        </div>
-        <div class="toast-left-orange">
-            <p class="toast-text">Message!!!!</p>
-            <button class="btn-filled-orange">undo</button>
-        </div>
-        <script src="./toast.js"></script>
+        <nav class="appbar-fixed">
+            <span class="logo"><img src="/images/text-logo.png" /></span>
+            <span class="links">
+                <a href="#" class="social-links"
+                    ><i class="fab fa-github-square"></i
+                ></a>
+                <a href="#" class="social-links"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-links"
+                    ><i class="fab fa-twitter-square"></i
+                ></a>
+                <a href="#" class="ham-burger"><i class="fa fa-bars"></i></a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <li class="list-items-hover">Button</li>
+                    <li class="list-items-hover">Avatar</li>
+                    <li class="list-items-hover">Badge</li>
+                    <li class="list-items-hover">Alert</li>
+                    <li class="list-items-hover">Card</li>
+                    <li class="list-items-hover">Image</li>
+                    <li class="list-items-hover">Input</li>
+                    <li class="list-items-hover">Modal</li>
+                    <li class="list-items-hover">Rating</li>
+                    <li class="list-items-hover list-active">Toast</li>
+                    <li class="list-items-hover">Slider</li>
+                    <li class="list-items-hover">Lists</li>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Toast</h1>
+                <p>
+                    The toast is used to display alerts on the top of an
+                    overlap. The toast will close itself when the close button
+                    is pressed, or after a default shutdown time.
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Simple alerts</h2>
+                <p>
+                    Toasts can be configured to appear at either the top or the
+                    bottom of an application window.
+                </p>
+                <small
+                    >Add the <code>auto-close-toast</code> class if you want the
+                    toast to disappear automatically after 5 seconds.</small
+                >
+                <div class="example-div">
+                    <div class="toast-left-blue">
+                        <p class="toast-text">Message!!!!</p>
+                        <button class="btn-filled-blue">undo</button>
+                    </div>
+                    <div class="toast-center-red">
+                        <p class="toast-text">Message!!!!</p>
+                        <button class="btn-filled-red">undo</button>
+                    </div>
+                    <div class="toast-right-green">
+                        <p class="toast-text">Message!!!!</p>
+                        <button class="btn-filled-green">undo</button>
+                    </div>
+                    <div class="toast-left-orange">
+                        <p class="toast-text">Message!!!!</p>
+                        <button class="btn-filled-orange">undo</button>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast-left-blue%2520auto-close-toast%2522%253E%250A%2509%253Cp%2520class%253D%2522toast-text%2522%253EMessage%21%21%21%21%253C%252Fp%253E%250A%2509%253Cbutton%2520class%253D%2522btn-filled-blue%2522%253Eundo%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast-center-red%2522%253E%250A%2509%253Cp%2520class%253D%2522toast-text%2522%253EMessage%21%21%21%21%253C%252Fp%253E%250A%2509%253Cbutton%2520class%253D%2522btn-filled-red%2522%253Eundo%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast-right-green%2522%253E%250A%2509%253Cp%2520class%253D%2522toast-text%2522%253EMessage%21%21%21%21%253C%252Fp%253E%250A%2509%253Cbutton%2520class%253D%2522btn-filled-green%2522%253Eundo%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast-left-orange%2522%253E%250A%2509%253Cp%2520class%253D%2522toast-text%2522%253EMessage%21%21%21%21%253C%252Fp%253E%250A%2509%253Cbutton%2520class%253D%2522btn-filled-orange%2522%253Eundo%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-github-square"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-twitter-square"></i
+                    ></a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"

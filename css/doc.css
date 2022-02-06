@@ -100,6 +100,14 @@ nav {
     width: 16rem;
 }
 
+.toast-left-blue,
+.toast-center-red,
+.toast-left-orange,
+.toast-right-green {
+    position: unset;
+    transform: unset;
+}
+
 .main-docs {
     margin: 0 20rem 0 16.5rem;
     padding: 1rem;
