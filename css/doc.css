@@ -6,6 +6,9 @@ html {
     scroll-behavior: smooth;
 }
 
+.image-example-box {
+    width: 20vw;
+}
 body {
     font-family: "Quicksand", sans-serif;
     background: var(--light);
