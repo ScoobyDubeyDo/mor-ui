@@ -9,19 +9,122 @@
         <title>MOR | Image</title>
     </head>
     <body>
-        <div class="image-example-box">
-            <img
-                class="responsive-round-image"
-                src="https://picsum.photos/500/600"
-                alt="random pic for display"
-            />
-        </div>
-        <div class="image-example-box">
-            <img
-                class="responsive-image"
-                src="https://picsum.photos/500/600"
-                alt="random pic for display"
-            />
-        </div>
+        <nav class="appbar-fixed">
+            <span class="logo"><img src="/images/text-logo.png" /></span>
+            <span class="links">
+                <a href="#" class="social-links"
+                    ><i class="fab fa-github-square"></i
+                ></a>
+                <a href="#" class="social-links"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-links"
+                    ><i class="fab fa-twitter-square"></i
+                ></a>
+                <a href="#" class="ham-burger"><i class="fa fa-bars"></i></a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <li class="list-items-hover">Button</li>
+                    <li class="list-items-hover">Avatar</li>
+                    <li class="list-items-hover">Badge</li>
+                    <li class="list-items-hover">Alert</li>
+                    <li class="list-items-hover">Card</li>
+                    <li class="list-items-hover list-active">Image</li>
+                    <li class="list-items-hover">Input</li>
+                    <li class="list-items-hover">Modal</li>
+                    <li class="list-items-hover">Rating</li>
+                    <li class="list-items-hover">Toast</li>
+                    <li class="list-items-hover">Slider</li>
+                    <li class="list-items-hover">Lists</li>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Image</h1>
+                <p>
+                    An image is a graphic representation of something. They can
+                    be responsive to fit the width of the parent (so that they
+                    don't jump out of their parent container), And they can also
+                    be customized for round shape..
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Responsive Image</h2>
+                <p>
+                    The height of the image will be adjusted taking into account
+                    the same aspect ratio. If you would like to modify the
+                    aspect ratio, you will need to crop the image.
+                </p>
+                <div class="example-div-sm">
+                    <img
+                        class="responsive-image"
+                        src="https://picsum.photos/500/600"
+                        alt="random pic for display"
+                    />
+                </div>
+                <div class="code-snippet-sm">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522parent%2522%253E%250A%2509%253Cimg%250A%2509%2509class%253D%2522responsive-image%2522%250A%2509%2509src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F600%2522%250A%2509%2509alt%253D%2522random%2520pic%2520for%2520display%2522%250A%2509%252F%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Responsive Round Image</h2>
+                <p>
+                    Image that will grow to 100% width of its parent container
+                    and will also be responsive. The height of the image will be
+                    adjusted keeping the same aspect ratio.
+                </p>
+                <small
+                    >Round does not mean a perfect circle, it is dependent upon
+                    the aspect ratio of the image.</small
+                >
+                <div class="example-div-sm">
+                    <img
+                        class="responsive-round-image"
+                        src="https://picsum.photos/500/600"
+                        alt="random pic for display"
+                    />
+                </div>
+                <div class="code-snippet-sm">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522parent%2522%253E%250A%2509%253Cimg%250A%2509%2509class%253D%2522responsive-round-image%2522%250A%2509%2509src%253D%2522https%253A%252F%252Fpicsum.photos%252F500%252F600%2522%250A%2509%2509alt%253D%2522random%2520pic%2520for%2520display%2522%250A%2509%252F%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-github-square"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-twitter-square"></i
+                    ></a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
