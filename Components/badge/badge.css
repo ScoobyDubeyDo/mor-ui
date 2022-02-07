@@ -1,0 +1,73 @@
+@import url(/Components/Shared/reset.css);
+@import url(/Components/Shared/colors.css);
+
+.badge-container {
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    position: relative;
+}
+
+.icon {
+    font-size: 3rem;
+    color: var(--dark);
+}
+
+.number-badge-green,
+.number-badge-red,
+.number-badge-blue,
+.number-badge-purple {
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1.5em;
+    min-height: 1.5em;
+    top: -5px;
+    font-weight: 600;
+    color: var(--light);
+    right: -8px;
+}
+
+.number-badge-green {
+    background: var(--green-500);
+}
+
+.number-badge-blue {
+    background: var(--blue-500);
+}
+
+.number-badge-purple {
+    background: var(--purple-500);
+}
+
+.number-badge-red {
+    background: var(--red-500);
+    color: var(--dark);
+}
+
+.status-badge-gray,
+.status-badge-green,
+.status-badge-red {
+    border: 1px solid var(--light);
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+    bottom: 5px;
+}
+
+.status-badge-gray {
+    background: var(--gray-600);
+}
+
+.status-badge-green {
+    background: var(--green-600);
+}
+
+.status-badge-red {
+    background: var(--red-600);
+}
