@@ -1,0 +1,32 @@
+@import url(../Shared/reset.css);
+@import url(../Shared/colors.css);
+
+.avatar-circle-sm,
+.avatar-circle-md,
+.avatar-circle-lg {
+    border-radius: 50%;
+}
+
+.avatar-squircle-sm,
+.avatar-squircle-md,
+.avatar-squircle-lg {
+    border-radius: 0.7rem;
+}
+
+.avatar-squircle-sm,
+.avatar-circle-sm {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+}
+
+.avatar-squircle-md,
+.avatar-circle-md {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.avatar-squircle-lg,
+.avatar-circle-lg {
+    max-width: 4rem;
+    max-height: 4rem;
+}
