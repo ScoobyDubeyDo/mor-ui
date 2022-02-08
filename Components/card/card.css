@@ -1,0 +1,138 @@
+@import url(../Shared/reset.css);
+@import url(../Shared/colors.css);
+
+.card {
+    background: var(--light);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 0.5rem;
+    max-width: 23rem;
+}
+
+.card-badge,
+.card {
+    display: inline-block;
+}
+
+.card-body-horizontal,
+.card-overlay-text,
+.card-side-image,
+.card-top-image,
+.card-badge,
+.card-body,
+.card {
+    border-radius: 5px;
+}
+
+.card,
+.card-body,
+.card-image-overlay {
+    position: relative;
+}
+
+.card-body-horizontal:hover,
+.card-body:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    filter: brightness(95%);
+    background: var(--gray-400);
+}
+
+.card-subtitle,
+.card-title,
+.card-text {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    font-weight: 600;
+}
+
+.card-footer,
+.card-actions,
+.card-btns,
+.card-header,
+.card-icon-btns,
+.card-body-horizontal {
+    display: flex;
+}
+
+.card-header,
+.card-footer {
+    justify-content: center;
+}
+
+.card-footer,
+.card-actions,
+.card-btns,
+.card-icon-btns {
+    align-items: center;
+}
+
+.card-actions {
+    flex-basis: 100%;
+    margin: 0.3rem 0;
+    justify-content: space-between;
+}
+
+.card-icon-btns,
+.card-btns {
+    gap: 0.5rem;
+    flex-basis: 50%;
+}
+
+.card-icon-btns {
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.card-side-image,
+.card-top-image {
+    object-fit: cover;
+}
+
+.card-top-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-overlay-text,
+.card-badge {
+    position: absolute;
+}
+
+.card-overlay-text {
+    background: linear-gradient(#00000020, #00000090);
+    width: 100%;
+    height: fit-content;
+    bottom: 2%;
+}
+
+.card-overlay-text > * {
+    color: var(--light);
+}
+
+.card-side-image {
+    width: 8rem;
+    min-height: 8rem;
+}
+
+.card-side-content {
+    width: 15rem;
+}
+
+.card-badge {
+    background: var(--blue-600);
+    text-align: center;
+    padding: 0.2rem;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+}
