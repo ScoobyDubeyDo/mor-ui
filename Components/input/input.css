@@ -1,0 +1,46 @@
+@import url(../Shared/reset.css);
+@import url(../Shared/colors.css);
+
+.input-label {
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.input {
+    border: 2px solid var(--gray-400);
+    border-radius: 4px;
+    width: 100%;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.input-error-msg {
+    display: none;
+    font-weight: bold;
+    color: var(--red-600);
+}
+
+.input:focus {
+    border-color: var(--blue-600);
+    box-shadow: 0 0 8px 0 var(--blue-600);
+}
+
+.input:not(:focus):not(:placeholder-shown):required,
+.input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: var(--red-600);
+    box-shadow: 0 0 8px 0 var(--red-600);
+}
+
+.input:not(:focus):not(:placeholder-shown):invalid ~ .input-error-msg {
+    display: block;
+}
+
+.input:not(:focus):not(:placeholder-shown):valid {
+    border-color: var(--green-600);
+    box-shadow: 0 0 8px 0 var(--green-600);
+}
