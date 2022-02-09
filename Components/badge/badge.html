@@ -6,60 +6,225 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./badge.css" />
         <link rel="stylesheet" href="../avatar/avatar.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
         <title>MOR | Badge</title>
     </head>
     <body>
-        <br />
-        <div class="badge-container">
-            <i class="fas fa-envelope icon"></i>
-            <span class="number-badge-green">66</span>
-        </div>
-        <div class="badge-container">
-            <i class="fas fa-envelope icon"></i>
-            <span class="number-badge-red">66</span>
-        </div>
-        <div class="badge-container">
-            <i class="fas fa-envelope icon"></i>
-            <span class="number-badge-blue">66</span>
-        </div>
-        <div class="badge-container">
-            <img
-                class="avatar-squircle-md"
-                src="https://picsum.photos/seed/black/100"
-                alt="avatar"
-            />
-            <span class="number-badge-purple">66</span>
-        </div>
-        <br />
-        <div class="badge-container">
-            <img
-                class="avatar-circle-md"
-                src="https://picsum.photos/seed/black/100"
-                alt="avatar"
-            />
-            <span class="status-badge-red"></span>
-        </div>
-        <div class="badge-container">
-            <img
-                class="avatar-squircle-md"
-                src="https://picsum.photos/seed/black/100"
-                alt="avatar"
-            /><span class="status-badge-gray"></span>
-        </div>
-        <div class="badge-container">
-            <img
-                class="avatar-squircle-sm"
-                src="https://picsum.photos/seed/black/100"
-                alt="avatar"
-            /><span class="status-badge-red"></span>
-        </div>
-        <div class="badge-container">
-            <img
-                class="avatar-squircle-lg"
-                src="https://picsum.photos/seed/black/100"
-                alt="avatar"
-            /><span class="status-badge-green"></span>
-        </div>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li>
+                    </a>
+                    <a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Badge</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Badges</h1>
+                <p>
+                    Badges are small circles, positioned in the upper right or
+                    bottom right corner of the parent component. The badge may
+                    be used to display numbers, online and offline status,
+                    depending on where they are used.
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        ></iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Number Badge</h2>
+                <p>
+                    Examples of badges containing number, using four colors. The
+                    badge is applied to its children.
+                </p>
+                <div class="example-div">
+                    <div class="badge-container">
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="number-badge-green">66</span>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="number-badge-red">66</span>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="number-badge-blue">66</span>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="number-badge-purple">66</span>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-green%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-red%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-blue%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-purple%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Status Badge</h2>
+                <p>
+                    Status Badges is used to show the current status of a user.
+                </p>
+                <small
+                    >As of now there are only three colors but in future more
+                    colors will get supported.</small
+                >
+                <div class="example-div">
+                    <div class="badge-container">
+                        <img
+                            class="avatar-circle-md"
+                            src="https://picsum.photos/seed/black/100"
+                            alt="avatar"
+                        />
+                        <span class="status-badge-red"></span>
+                    </div>
+                    <div class="badge-container">
+                        <img
+                            class="avatar-squircle-md"
+                            src="https://picsum.photos/seed/black/100"
+                            alt="avatar"
+                        />
+                        <span class="status-badge-gray"></span>
+                    </div>
+                    <div class="badge-container">
+                        <img
+                            class="avatar-squircle-lg"
+                            src="https://picsum.photos/seed/black/100"
+                            alt="avatar"
+                        />
+                        <span class="status-badge-green"></span>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%250A%2509%2509class%253D%2522avatar-circle-md%2522%250A%2509%2509src%253D%2522....%2522%250A%2509%2509alt%253D%2522avatar%2522%250A%2509%252F%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-red%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%250A%2509%2509class%253D%2522avatar-squircle-md%2522%250A%2509%2509src%253D%2522....%2522%250A%2509%2509alt%253D%2522avatar%2522%250A%2509%252F%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-gray%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cimg%250A%2509%2509class%253D%2522avatar-squircle-lg%2522%250A%2509%2509src%253D%2522....%2522%250A%2509%2509alt%253D%2522avatar%2522%250A%2509%252F%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-green%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"

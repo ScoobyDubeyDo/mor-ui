@@ -4,27 +4,231 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/doc.css" />
         <link rel="stylesheet" href="./alert.css" />
+        <link rel="stylesheet" href="../button/button.css" />
         <title>MOR | Alert</title>
     </head>
     <body>
-        <div class="alert-success">
-            <i class="fas fa-check-circle alert-icon"></i>
-            Lorem ipsum dolor sit amet consectetur.
-        </div>
-        <div class="alert-error">
-            <i class="fas fa-exclamation-circle alert-icon"></i>
-            Lorem ipsum dolor sit amet consectetur.
-        </div>
-        <div class="alert-warning">
-            <i class="fas fa-exclamation-triangle alert-icon"></i>
-            Lorem ipsum dolor sit amet consectetur.
-        </div>
-        <div class="alert-info">
-            <i class="fas fa-info-circle alert-icon"></i>
-            Lorem ipsum dolor sit amet consectetur.
-            <i class="fas fa-times alert-button"></i>
-        </div>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li>
+                    </a>
+                    <a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Alert</h1>
+                <p>
+                    An Alert displays a short, important message in a way that
+                    draws the attention of the user without interrupting the
+                    task of the user. Our alerts are available for any length of
+                    text, along with an optional closure button.
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        ></iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Basic alerts</h2>
+                <p>
+                    The alert offers four severity levels that set a distinctive
+                    icon and color.
+                </p>
+                <small>Icons are optional to have.</small>
+                <div class="example-div-sm">
+                    <div class="alert-success">
+                        <i class="fas fa-check-circle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                    <div class="alert-error">
+                        <i class="fas fa-exclamation-circle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                    <div class="alert-warning">
+                        <i class="fas fa-exclamation-triangle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                    <div class="alert-info">
+                        <i class="fas fa-info-circle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-success%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-error%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-warning%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%253Cdiv%2520class%253D%2522alert-info%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Alert with actions</h2>
+                <p>
+                    An alert may have an action, such as a close or undo button.
+                    It is displayed following the message, at the end of the
+                    alert.
+                </p>
+                <small
+                    >Add <code>alert-button</code> class to the action element.
+                    Action buttons are optional to have.
+                </small>
+                <div class="example-div-sm">
+                    <div class="alert-success">
+                        <i class="fas fa-check-circle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                        <button class="icon-btn-green alert-button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="alert-error">
+                        <i class="fas fa-exclamation-circle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                        <button class="btn-filled-red alert-button">
+                            undo
+                        </button>
+                    </div>
+                    <div class="alert-warning">
+                        <i class="fas fa-exclamation-triangle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                    <div class="alert-info">
+                        <i class="fas fa-info-circle alert-icon"></i>
+                        Lorem ipsum dolor sit amet consectetur.
+                        <button class="btn-outlined-blue alert-button">
+                            yes
+                        </button>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-success%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%2509%253Cbutton%2520class%253D%2522icon-btn-green%2520alert-button%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert-error%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%2509%253Cbutton%2520class%253D%2522btn-filled-red%2520alert-button%2522%253E%250A%2509%2509undo%250A%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert-warning%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert-info%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert-icon%2522%253E%253C%252Fi%253E%2509%250A%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%250A%2509%253Cbutton%2520class%253D%2522btn-outlined-blue%2520alert-button%2522%253E%250A%2509%2509yes%250A%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"

@@ -4,39 +4,260 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/doc.css" />
         <link rel="stylesheet" href="./avatar.css" />
         <title>MOR | Avatar</title>
     </head>
     <body>
-        <img
-            class="avatar-circle-sm"
-            src="https://picsum.photos/100"
-            alt="avatar"
-        />
-        <img
-            class="avatar-circle-md"
-            src="https://picsum.photos/100"
-            alt="avatar"
-        />
-        <img
-            class="avatar-circle-lg"
-            src="https://picsum.photos/100"
-            alt="avatar"
-        />
-        <img
-            class="avatar-squircle-sm"
-            src="https://picsum.photos/100"
-            alt="avatar"
-        />
-        <img
-            class="avatar-squircle-md"
-            src="https://picsum.photos/100"
-            alt="avatar"
-        />
-        <img
-            class="avatar-squircle-lg"
-            src="https://picsum.photos/100"
-            alt="avatar"
-        />
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Avatar</li>
+                    </a>
+                    <a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Avatar</h1>
+                <p>
+                    The Avatar component is used to represent a user, which
+                    displays the profile image. An avatar may be circular or a
+                    squircle (square with rounded corners) , depending on its
+                    usage. The default is a circular avatar.
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        ></iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Circular Avatar</h2>
+                <p>
+                    Use a circle for all people-oriented objects that could
+                    potentially render as avatars.
+                </p>
+                <div class="example-div">
+                    <img
+                        class="avatar-circle-md"
+                        src="https://picsum.photos/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-circle-md"
+                        src="https://picsum.photos/seed/black/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-circle-md"
+                        src="https://picsum.photos/seed/face/100"
+                        alt="avatar"
+                    />
+                </div>
+                <div class="code-snippet-sm">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar-circle-md%2522%2520src%253D%2522....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-circle-md%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-circle-md%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Squircle Avatar</h2>
+                <p>
+                    Squircle is an addition to the basic circle-shaped avatar.
+                </p>
+                <div class="example-div">
+                    <img
+                        class="avatar-squircle-md"
+                        src="https://picsum.photos/seed/black/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-squircle-md"
+                        src="https://picsum.photos/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-squircle-md"
+                        src="https://picsum.photos/seed/face/100"
+                        alt="avatar"
+                    />
+                </div>
+                <div class="code-snippet-sm">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar-squircle-md%2522%2520src%253D%2522....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-squircle-md%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-squircle-md%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Avatar Sizes</h2>
+                <p>
+                    The Avatar component comes in 3 sizes. They are available in
+                    small, medium, and large sizes.
+                </p>
+                <div class="example-div">
+                    <img
+                        class="avatar-squircle-sm"
+                        src="https://picsum.photos/seed/black/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-circle-md"
+                        src="https://picsum.photos/seed/black/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-squircle-lg"
+                        src="https://picsum.photos/seed/face/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-circle-sm"
+                        src="https://picsum.photos/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-squircle-md"
+                        src="https://picsum.photos/seed/face/100"
+                        alt="avatar"
+                    />
+                    <img
+                        class="avatar-circle-lg"
+                        src="https://picsum.photos/100"
+                        alt="avatar"
+                    />
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar-squircle-sm%2522%2520src%253D%2522....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-circle-md%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-squircle-lg%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-circle-sm%2522%2520src%253D%2522....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-squircle-md%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-circle-lg%2522%2520src%253D%2522.....%2522%2520alt%253D%2522avatar%2522%2520%252F%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

@@ -5,50 +5,222 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./input.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
         <title>MOR | Input</title>
     </head>
     <body>
-        <label for="name" class="input-label">
-            Email
-            <input
-                class="input"
-                type="email"
-                placeholder="Your name"
-                id="name"
-                required
-            />
-            <p class="input-error-msg">This is an error message.</p>
-        </label>
-        <label for="name" class="input-label">
-            Name
-            <input
-                class="input"
-                type="text"
-                placeholder="Your name"
-                id="name"
-                required
-            />
-            <p class="input-error-msg">This is an error message.</p> </label
-        ><label for="name" class="input-label">
-            Password
-            <input
-                class="input"
-                type="password"
-                placeholder="Your name"
-                id="name"
-                required
-            />
-            <p class="input-error-msg">This is an error message.</p> </label
-        ><label for="name" class="input-label">
-            mobile
-            <input
-                class="input"
-                type="number"
-                placeholder="mobile"
-                id="name"
-                required
-            />
-            <p class="input-error-msg">This is an error message.</p>
-        </label>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li>
+                    </a>
+                    <a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Input</h1>
+                <p>
+                    Input allow users to enter text into a UI. They typically
+                    appear in forms and dialogs.
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2>Labeled Input</h2>
+                <p>
+                    Label Input has a label that exists at the top of the input
+                    field. They may be customized to display an error message
+                    and change colour accordingly.
+                </p>
+                <div class="example-div">
+                    <form>
+                        <label for="email" class="input-label">
+                            Email
+                            <input
+                                class="input"
+                                type="email"
+                                placeholder="Email id"
+                                id="email"
+                                required
+                            />
+                            <p class="input-error-msg">
+                                This is an error message.
+                            </p>
+                        </label>
+                        <label for="name" class="input-label">
+                            Name
+                            <input
+                                class="input"
+                                type="text"
+                                placeholder="Your name"
+                                id="name"
+                                required
+                            />
+                            <p class="input-error-msg">
+                                This is an error message.
+                            </p> </label
+                        ><label for="password" class="input-label">
+                            Password
+                            <input
+                                class="input"
+                                type="password"
+                                placeholder="Your name"
+                                id="password"
+                                required
+                            />
+                            <p class="input-error-msg">
+                                This is an error message.
+                            </p> </label
+                        ><label for="mobile" class="input-label">
+                            mobile
+                            <input
+                                class="input"
+                                type="number"
+                                placeholder="mobile number"
+                                id="mobile"
+                                required
+                            />
+                            <p class="input-error-msg">
+                                This is an error message.
+                            </p>
+                        </label>
+                    </form>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cform%253E%250A%2509%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522input-label%2522%253E%250A%2509%2509Email%250A%2509%2509%253Cinput%250A%2509%2509%2509class%253D%2522input%2522%250A%2509%2509%2509type%253D%2522email%2522%250A%2509%2509%2509placeholder%253D%2522Email%2520id%2522%250A%2509%2509%2509id%253D%2522email%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cp%2520class%253D%2522input-error-msg%2522%253E%250A%2509%2509%2509This%2520is%2520an%2520error%2520message.%250A%2509%2509%253C%252Fp%253E%250A%2509%253C%252Flabel%253E%250A%250A%2520%2520%2509%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522input-label%2522%253E%250A%2509%2509Name%250A%2509%2509%253Cinput%250A%2509%2509%2509class%253D%2522input%2522%250A%2509%2509%2509type%253D%2522text%2522%250A%2509%2509%2509placeholder%253D%2522Your%2520name%2522%250A%2509%2509%2509id%253D%2522name%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cp%2520class%253D%2522input-error-msg%2522%253E%250A%2509%2509%2509This%2520is%2520an%2520error%2520message.%250A%2509%2509%253C%252Fp%253E%2520%250A%2509%253C%252Flabel%253E%250A%250A%2520%2520%2509%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522input-label%2522%253E%250A%2509%2509Password%250A%2509%2509%253Cinput%250A%2509%2509%2509class%253D%2522input%2522%250A%2509%2509%2509type%253D%2522password%2522%250A%2509%2509%2509placeholder%253D%2522Your%2520name%2522%250A%2509%2509%2509id%253D%2522password%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cp%2520class%253D%2522input-error-msg%2522%253E%250A%2509%2509%2509This%2520is%2520an%2520error%2520message.%250A%2509%2509%253C%252Fp%253E%250A%2509%253C%252Flabel%253E%250A%250A%2520%2520%2509%253Clabel%2520for%253D%2522mobile%2522%2520class%253D%2522input-label%2522%253E%250A%2509%2509mobile%250A%2509%2509%253Cinput%250A%2509%2509%2509class%253D%2522input%2522%250A%2509%2509%2509type%253D%2522number%2522%250A%2509%2509%2509placeholder%253D%2522mobile%2520number%2522%250A%2509%2509%2509id%253D%2522mobile%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cp%2520class%253D%2522input-error-msg%2522%253E%250A%2509%2509%2509This%2520is%2520an%2520error%2520message.%250A%2509%2509%253C%252Fp%253E%250A%2509%253C%252Flabel%253E%250A%253C%252Fform%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-github-square"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-twitter-square"></i
+                    ></a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

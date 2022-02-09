@@ -154,6 +154,9 @@ nav {
 }
 
 .list-items-hover {
+    text-decoration: none;
+    list-style: none;
+    color: var(--dark);
     transition: all 0.3s ease;
     width: calc(100% - 0.5rem);
     display: flex;
@@ -167,6 +170,8 @@ nav {
 
 .list-items-hover:hover {
     background: #00000010;
+    font-weight: 600;
+    color: rgba(72, 33, 88, 1);
     padding: 10px 20px;
 }
 
@@ -249,6 +254,7 @@ p {
     font-family: inherit;
     color: var(--light);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -262,7 +268,6 @@ p {
     font-size: 1rem;
     border: rgba(149, 75, 117, 1) solid 2px;
     background: var(--light);
-    text-decoration: none;
     display: inline-block;
     line-height: inherit;
     color: rgba(72, 33, 88, 1);

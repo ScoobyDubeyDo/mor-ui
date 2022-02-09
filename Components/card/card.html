@@ -5,104 +5,326 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../button/button.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
         <link rel="stylesheet" href="./card.css" />
-        <title>MOR | Card`</title>
+        <title>MOR | Card</title>
     </head>
 
     <body>
-        <body>
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">Lorem, ipsum dolor.</h3>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li>
+                    </a>
+                    <a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Card</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1>Card</h1>
+                <p>
+                    Cards are surfaces that display content and actions on a
+                    single topic. They should be easily scanned to obtain
+                    relevant and usable information.
+                </p>
+                <hr />
+                <h2>Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
                 </div>
-                <div class="card-body">
-                    <div class="card-badge">Quote</div>
-                    <p class="card-subtitle">Lorem, ipsum.</p>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Iste hic nulla, repellendus incidunt numquam
-                        aperiam. Veritatis a aspernatur dicta natus! Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit.
-                        Consectetur, perferendis.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-image-overlay">
-                        <img
-                            src="https://picsum.photos/500/300"
-                            alt="image of hela"
-                            class="card-top-image"
-                        />
-                        <div class="card-overlay-text">
+                <hr />
+                <h2>Text only Card</h2>
+                <p>
+                    This Card contains a title, a descriptive text and also a
+                    subtitle.
+                </p>
+                <small>Here card badge is a optional element.</small>
+                <div class="example-div">
+                    <div class="card">
+                        <div class="card-header">
                             <h3 class="card-title">Lorem, ipsum dolor.</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-badge">Quote</div>
                             <p class="card-subtitle">Lorem, ipsum.</p>
-                        </div>
-                    </div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Iste hic nulla, repellendus incidunt numquam
-                        aperiam. Veritatis a aspernatur dicta natus! Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit.
-                        Consectetur, perferendis.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <div class="card-actions">
-                        <div class="card-btns">
-                            <button class="btn-filled-blue">click</button>
-                            <button class="btn-Outlined-blue">action</button>
-                        </div>
-                        <div class="card-icon-btns">
-                            <button class="icon-btn-blue">
-                                <i class="far fa-heart"></i></button
-                            ><button class="icon-btn-blue">
-                                <i class="fas fa-share-alt"></i></button
-                            ><button class="icon-btn-blue">
-                                <i class="fas fa-ellipsis-v"></i>
-                            </button>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Iste hic nulla, repellendus
+                                incidunt numquam aperiam. Veritatis a aspernatur
+                                dicta natus!
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body-horizontal">
-                    <img
-                        src="https://picsum.photos/500/300"
-                        alt="image of hela"
-                        class="card-side-image"
-                    />
-                    <div class="card-side-content">
-                        <h3 class="card-title">Hela Odinsdottir</h3>
-                        <p class="card-subtitle">Goddess of Death</p>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Iste hic nulla, repellendus incidunt numquam
-                            aperiam. Veritatis a aspernatur dicta natus!
-                        </p>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-badge%2522%253EQuote%253C%252Fdiv%253E%250A%2509%253Cp%2520class%253D%2522card-subtitle%2522%253ELorem%252C%2520ipsum.%253C%252Fp%253E%250A%2509%253Cp%2520class%253D%2522card-text%2522%253E%250A%2509%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%250A%2509%2509adipisicing%2520elit.%2520Iste%2520hic%2520nulla%252C%2520repellendus%250A%2509%2509incidunt%2520numquam%2520aperiam.%2520Veritatis%2520a%2520aspernatur%250A%2509%2509dicta%2520natus%21%250A%2509%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Card with dismiss</h2>
+                <p>Closable card with a cross icon.</p>
+                <div class="example-div">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Lorem, ipsum dolor.</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-subtitle">Lorem, ipsum.</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Iste hic nulla, repellendus
+                                incidunt numquam aperiam. Veritatis a aspernatur
+                                dicta natus!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <div class="card-icon-btns">
+                                    <button class="icon-btn-pink">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="card-actions">
-                        <div class="card-btns">
-                            <button class="btn-filled-blue">click</button>
-                            <button class="btn-Outlined-blue">action</button>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2509%2509%253Ch3%2520class%253D%2522card-title%2522%253ELorem%252C%2520ipsum%2520dolor.%253C%252Fh3%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Cp%2520class%253D%2522card-subtitle%2522%253ELorem%252C%2520ipsum.%253C%252Fp%253E%250A%2509%2509%253Cp%2520class%253D%2522card-text%2522%253E%250A%2509%2509%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%250A%2509%2509%2509adipisicing%2520elit.%2520Iste%2520hic%2520nulla%252C%2520repellendus%250A%2509%2509%2509incidunt%2520numquam%2520aperiam.%2520Veritatis%2520a%2520aspernatur%250A%2509%2509%2509dicta%2520natus%21%250A%2509%2509%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-icon-btns%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522icon-btn-pink%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Card with text overlay</h2>
+                <p>Card with text over the image.</p>
+                <div class="example-div">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image-overlay">
+                                <img
+                                    src="https://picsum.photos/500/300"
+                                    alt="image of hela"
+                                    class="card-top-image"
+                                />
+                                <div class="card-overlay-text">
+                                    <h3 class="card-title">
+                                        Lorem, ipsum dolor.
+                                    </h3>
+                                    <p class="card-subtitle">Lorem, ipsum.</p>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Iste hic nulla, repellendus
+                                incidunt numquam aperiam. Veritatis a aspernatur
+                                dicta natus!
+                            </p>
                         </div>
-                        <div class="card-icon-btns">
-                            <button class="icon-btn-blue">
-                                <i class="far fa-heart"></i></button
-                            ><button class="icon-btn-blue">
-                                <i class="fas fa-share-alt"></i>
-                            </button>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <div class="card-btns">
+                                    <button class="btn-filled-blue">
+                                        click
+                                    </button>
+                                    <button class="btn-outlined-blue">
+                                        action
+                                    </button>
+                                </div>
+                                <div class="card-icon-btns">
+                                    <button class="icon-btn-blue">
+                                        <i class="far fa-heart"></i></button
+                                    ><button class="icon-btn-blue">
+                                        <i class="fas fa-share-alt"></i></button
+                                    ><button class="icon-btn-blue">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <script
-                src="https://kit.fontawesome.com/0c3127d83e.js"
-                crossorigin="anonymous"
-            ></script>
-        </body>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-image-overlay%2522%253E%250A%2509%2509%2509%253Cimg%250A%2509%2509%2509%2509src%253D%2522....%2522%250A%2509%2509%2509%2509alt%253D%2522demo%2522%250A%2509%2509%2509%2509class%253D%2522card-top-image%2522%250A%2509%2509%2509%252F%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-overlay-text%2522%253E%250A%2509%2509%2509%2509%253Ch3%2520class%253D%2522card-title%2522%253E%250A%2509%2509%2509%2509%2509Lorem%252C%2520ipsum%2520dolor.%250A%2509%2509%2509%2509%253C%252Fh3%253E%250A%2509%2509%2509%2509%253Cp%2520class%253D%2522card-subtitle%2522%253ELorem%252C%2520ipsum.%253C%252Fp%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cp%2520class%253D%2522card-text%2522%253E%250A%2509%2509%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%250A%2509%2509%2509adipisicing%2520elit.%2520Iste%2520hic%2520nulla%252C%2520repellendus%250A%2509%2509%2509incidunt%2520numquam%2520aperiam.%2520Veritatis%2520a%2520aspernatur%250A%2509%2509%2509dicta%2520natus%21%250A%2509%2509%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522btn-filled-blue%2522%253E%250A%2509%2509%2509%2509%2509click%250A%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522btn-outlined-blue%2522%253E%250A%2509%2509%2509%2509%2509action%250A%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-icon-btns%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522icon-btn-blue%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fbutton%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522icon-btn-blue%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522icon-btn-blue%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <h2>Horizontal card</h2>
+                <div class="example-div">
+                    <div class="card">
+                        <div class="card-badge">Quote</div>
+                        <div class="card-body-horizontal">
+                            <img
+                                src="https://picsum.photos/300/200"
+                                alt="demo"
+                                class="card-side-image"
+                            />
+                            <div class="card-side-content">
+                                <h3 class="card-title">Lorem, ipsum.</h3>
+                                <p class="card-subtitle">
+                                    Lorem ipsum dolor sit.
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Iste hic nulla,
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <div class="card-btns">
+                                    <button class="btn-filled-blue">
+                                        click
+                                    </button>
+                                </div>
+                                <div class="card-icon-btns">
+                                    <button class="icon-btn-blue">
+                                        <i class="far fa-heart"></i></button
+                                    ><button class="icon-btn-blue">
+                                        <i class="fas fa-share-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-badge%2522%253EQuote%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body-horizontal%2522%253E%250A%2509%2509%253Cimg%250A%2509%2509%2509src%253D%2522....%2522%250A%2509%2509%2509alt%253D%2522demo%2522%250A%2509%2509%2509class%253D%2522card-side-image%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-side-content%2522%253E%250A%2509%2509%2509%253Ch3%2520class%253D%2522card-title%2522%253ELorem%252C%2520ipsum.%253C%252Fh3%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card-subtitle%2522%253E%250A%2509%2509%2509%2509Lorem%2520ipsum%2520dolor%2520sit.%250A%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card-text%2522%253E%250A%2509%2509%2509%2509Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%250A%2509%2509%2509%2509adipisicing%2520elit.%2520Iste%2520hic%2520nulla%252C%250A%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522btn-filled-blue%2522%253E%250A%2509%2509%2509%2509%2509click%250A%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-icon-btns%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522icon-btn-blue%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522icon-btn-blue%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-github-square"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" class="footer-links"
+                        ><i class="fab fa-twitter-square"></i
+                    ></a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

@@ -8,13 +8,13 @@
 .btn-filled-orange,
 .btn-filled-pink,
 .btn-filled-yellow,
-.btn-Outlined-red,
-.btn-Outlined-green,
-.btn-Outlined-blue,
-.btn-Outlined-purple,
-.btn-Outlined-orange,
-.btn-Outlined-pink,
-.btn-Outlined-yellow,
+.btn-outlined-red,
+.btn-outlined-green,
+.btn-outlined-blue,
+.btn-outlined-purple,
+.btn-outlined-orange,
+.btn-outlined-pink,
+.btn-outlined-yellow,
 .btn-link {
     border: none;
     text-transform: uppercase;
@@ -37,13 +37,13 @@
 .btn-filled-orange,
 .btn-filled-pink,
 .btn-filled-yellow,
-.btn-Outlined-red,
-.btn-Outlined-green,
-.btn-Outlined-blue,
-.btn-Outlined-purple,
-.btn-Outlined-orange,
-.btn-Outlined-pink,
-.btn-Outlined-yellow {
+.btn-outlined-red,
+.btn-outlined-green,
+.btn-outlined-blue,
+.btn-outlined-purple,
+.btn-outlined-orange,
+.btn-outlined-pink,
+.btn-outlined-yellow {
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
@@ -60,13 +60,13 @@
 }
 
 .btn-filled-red:hover,
-.btn-Outlined-red:hover,
+.btn-outlined-red:hover,
 .icon-btn-red:hover {
     background: var(--red-600);
 }
 
 .btn-filled-red:active,
-.btn-Outlined-red:active,
+.btn-outlined-red:active,
 .icon-btn-red:active {
     background: var(--red-500);
 }
@@ -77,13 +77,13 @@
 }
 
 .btn-filled-green:hover,
-.btn-Outlined-green:hover,
+.btn-outlined-green:hover,
 .icon-btn-green:hover {
     background: var(--green-600);
 }
 
 .btn-filled-green:active,
-.btn-Outlined-green:active,
+.btn-outlined-green:active,
 .icon-btn-green:active {
     background: var(--green-500);
 }
@@ -94,13 +94,13 @@
 }
 
 .btn-filled-blue:hover,
-.btn-Outlined-blue:hover,
+.btn-outlined-blue:hover,
 .icon-btn-blue:hover {
     background: var(--blue-600);
 }
 
 .btn-filled-blue:active,
-.btn-Outlined-blue:active,
+.btn-outlined-blue:active,
 .icon-btn-blue:active {
     background: var(--blue-500);
 }
@@ -112,13 +112,13 @@
 }
 
 .btn-filled-purple:hover,
-.btn-Outlined-purple:hover,
+.btn-outlined-purple:hover,
 .icon-btn-purple:hover {
     background: var(--purple-600);
 }
 
 .btn-filled-purple:active,
-.btn-Outlined-purple:active,
+.btn-outlined-purple:active,
 .icon-btn-purple:active {
     background: var(--purple-500);
 }
@@ -129,13 +129,13 @@
 }
 
 .btn-filled-orange:hover,
-.btn-Outlined-orange:hover,
+.btn-outlined-orange:hover,
 .icon-btn-orange:hover {
     background: var(--orange-600);
 }
 
 .btn-filled-orange:active,
-.btn-Outlined-orange:active,
+.btn-outlined-orange:active,
 .icon-btn-orange:active {
     background: var(--orange-500);
 }
@@ -147,13 +147,13 @@
 }
 
 .btn-filled-pink:hover,
-.btn-Outlined-pink:hover,
+.btn-outlined-pink:hover,
 .icon-btn-pink:hover {
     background: var(--pink-600);
 }
 
 .btn-filled-pink:active,
-.btn-Outlined-pink:active,
+.btn-outlined-pink:active,
 .icon-btn-pink:active {
     background: var(--pink-500);
 }
@@ -164,50 +164,50 @@
 }
 
 .btn-filled-yellow:hover,
-.btn-Outlined-yellow:hover,
+.btn-outlined-yellow:hover,
 .icon-btn-yellow:hover {
     background: var(--yellow-600);
 }
 
 .btn-filled-yellow:active,
-.btn-Outlined-yellow:active,
+.btn-outlined-yellow:active,
 .icon-btn-yellow:active {
     background: var(--yellow-500);
 }
 
-.btn-Outlined-red {
+.btn-outlined-red {
     border: var(--red-400) solid 2px;
 }
 
-.btn-Outlined-green {
+.btn-outlined-green {
     border: var(--green-400) solid 2px;
 }
 
-.btn-Outlined-blue {
+.btn-outlined-blue {
     border: var(--blue-400) solid 2px;
 }
 
-.btn-Outlined-purple {
+.btn-outlined-purple {
     border: var(--purple-400) solid 2px;
 }
 
-.btn-Outlined-purple:hover {
+.btn-outlined-purple:hover {
     color: var(--light);
 }
 
-.btn-Outlined-orange {
+.btn-outlined-orange {
     border: var(--orange-400) solid 2px;
 }
 
-.btn-Outlined-pink {
+.btn-outlined-pink {
     border: var(--pink-400) solid 2px;
 }
 
-.btn-Outlined-pink:hover {
+.btn-outlined-pink:hover {
     color: var(--light);
 }
 
-.btn-Outlined-yellow {
+.btn-outlined-yellow {
     border: var(--yellow-400) solid 2px;
 }
 
