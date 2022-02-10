@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 
 nav {
     background: var(--light);
-    height: 10vh;
+    height: 5rem;
     display: flex;
     align-items: center;
     box-shadow: 0px 11px 22px -25px var(--dark);
@@ -68,7 +69,7 @@ nav {
 .footer-links {
     display: none;
 }
-
+.nav-links:active,
 .links > a:active {
     color: rgba(188, 96, 131, 1);
 }
@@ -85,15 +86,15 @@ nav {
 }
 
 .doc-content {
-    margin-top: 10vh;
+    margin-top: 5rem;
 }
 
 .menu-bar {
     background-color: var(--light);
     position: fixed;
     box-shadow: 11px 0px 22px -25px var(--dark);
-    height: 90vh;
-    margin-top: 10vh;
+    height: calc(100vh - 5rem);
+    margin-top: 5rem;
     left: 0;
     top: 0;
     overflow: auto;
@@ -120,7 +121,7 @@ nav {
     background-position-y: center;
     background-size: auto 80%;
     background-attachment: fixed;
-    height: 90vh;
+    height: calc(100vh - 5rem);
 }
 
 .hero-content {
@@ -135,14 +136,10 @@ nav {
 
 .hero-content > h1 {
     color: rgba(72, 33, 88, 1);
-    font-weight: 800;
-    font-size: 2rem;
 }
 
 .hero-content > p {
     color: rgba(149, 75, 117, 1);
-    font-weight: 500;
-    font-size: 1.5rem;
 }
 
 .list {
@@ -203,18 +200,6 @@ nav {
 
 hr {
     margin: 1rem 0;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-p {
-    font-size: 20px;
 }
 
 .margin-left {
@@ -291,6 +276,7 @@ p {
 .main-dark {
     transition: all 1s ease;
     height: 100vh;
+    min-height: -webkit-fill-available;
     background: linear-gradient(
         48deg,
         rgba(188, 96, 131, 1) 10%,
@@ -382,11 +368,12 @@ p {
 
     .menu-bar {
         transition: all 0.3s ease;
-        top: -90vh;
+        top: -190vh;
         width: auto;
         height: max-content;
         box-shadow: 0px 11px 22px -25px var(--dark);
         right: 0;
+        z-index: 3;
     }
 
     .ham-burger {
