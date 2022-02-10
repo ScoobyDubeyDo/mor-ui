@@ -1,0 +1,12 @@
+@import url(/Components/Shared/reset.css);
+
+.vertical-list,
+.horizontal-list {
+    display: inline-flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.vertical-list {
+    flex-direction: column;
+}
