@@ -1,0 +1,44 @@
+@import url(/Components/Shared/colors.css);
+@import url(/Components/Shared/reset.css);
+
+.rating-icon {
+    pointer-events: none;
+}
+.rating-input {
+    height: 0px;
+    width: 0px;
+}
+.rating-label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+}
+.rating-icon-star {
+    color: var(--yellow-600);
+}
+.rating-input:checked ~ .rating-label .rating-icon-star {
+    color: var(--gray-400);
+}
+.rating-group:hover .rating-label .rating-icon-star {
+    color: var(--yellow-400);
+}
+.rating-input:hover ~ .rating-label .rating-icon-star {
+    color: var(--gray-400);
+}
+.rating-group {
+    display: inline-flex;
+}
+.rating-input-none {
+    display: none;
+}
+
+.rating-display:not(:empty) {
+    display: inline-block;
+    text-align: center;
+    color: var(--dark);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    min-width: 5rem;
+    padding: 0.5rem;
+    background: var(--yellow-600);
+}
