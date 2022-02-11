@@ -1,0 +1,18 @@
+@import url(/Components/Shared/reset.css);
+
+.grid {
+    display: grid;
+    text-align: center;
+    color: var(--black-light);
+    background-color: var(--light-color);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
