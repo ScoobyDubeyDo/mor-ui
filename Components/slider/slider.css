@@ -1,0 +1,33 @@
+@import url(/Components/Shared/reset.css);
+@import url(/Components/Shared/colors.css);
+
+.input-range {
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+.input-range:focus {
+    outline: none;
+}
+
+.input-range::-webkit-slider-runnable-track {
+    background: var(--blue-600);
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+.input-range::-webkit-slider-thumb {
+    appearance: none;
+    background-color: var(--blue-400);
+    height: 1.2rem;
+    border: 1px solid var(--blue-600);
+    border-radius: 5px;
+    margin-top: -6px;
+    width: 1.2rem;
+}
+
+.input-range:focus::-webkit-slider-runnable-track {
+    background: var(--blue-500);
+}
