@@ -3,8 +3,6 @@
 .grid {
     display: grid;
     text-align: center;
-    color: var(--black-light);
-    background-color: var(--light-color);
 }
 
 .grid-2 {
