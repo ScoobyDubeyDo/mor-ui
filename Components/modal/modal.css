@@ -1,0 +1,71 @@
+@import url(/Components/Shared/reset.css);
+
+.modal-lg,
+.modal-md,
+.modal-sm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.modal-closed {
+    display: none;
+}
+
+.modal-dialog {
+    position: relative;
+    margin: 20px;
+    max-height: 80vh;
+    min-width: 15rem;
+}
+
+.modal-lg > .modal-dialog {
+    max-width: 70rem;
+}
+
+.modal-md > .modal-dialog {
+    max-width: 50rem;
+}
+
+.modal-sm > .modal-dialog {
+    max-width: 30rem;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
