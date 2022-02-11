@@ -1,0 +1,53 @@
+@import url(/Components/Shared/reset.css);
+@import url(/Components/Shared/colors.css);
+
+.appbar-standard,
+.appbar-fixed {
+    left: 0;
+    top: 0;
+    background: var(--yellow-500);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.appbar-standard,
+.appbar-fixed {
+    max-width: 100%;
+    z-index: 1;
+    right: 0;
+}
+
+.appbar-standard {
+    position: absolute;
+}
+
+.appbar-fixed {
+    position: fixed;
+}
+
+.appbar-fixed-filler {
+    margin-top: 4.5rem;
+}
+
+.appbar-hero,
+.appbar-menu,
+.appbar-btns {
+    display: inline-flex;
+}
+.appbar-menu {
+    flex-basis: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.appbar-hero {
+    padding-left: 1rem;
+    flex-grow: 1;
+}
+
+.appbar-btns {
+    gap: 0.5rem;
+    flex-basis: 15%;
+    justify-content: space-evenly;
+}
