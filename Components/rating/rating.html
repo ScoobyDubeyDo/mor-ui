@@ -5,72 +5,289 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="/Components/rating/rating.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
+        <title>MOR | Rating</title>
     </head>
     <body>
-        <div class="rating-group">
-            <input
-                disabled
-                checked
-                class="rating-input rating-input-none"
-                name="star"
-                id="star-none"
-                value="0"
-                type="radio"
-            />
-            <label class="rating-label" for="star-1"
-                ><i class="rating-icon rating-icon-star fa fa-star"></i
-            ></label>
-            <input
-                class="rating-input"
-                name="star"
-                id="star-1"
-                value="1"
-                type="radio"
-            />
-            <label class="rating-label" for="star-2"
-                ><i class="rating-icon rating-icon-star fa fa-star"></i
-            ></label>
-            <input
-                class="rating-input"
-                name="star"
-                id="star-2"
-                value="2"
-                type="radio"
-            />
-            <label class="rating-label" for="star-3"
-                ><i class="rating-icon rating-icon-star fa fa-star"></i
-            ></label>
-            <input
-                class="rating-input"
-                name="star"
-                id="star-3"
-                value="3"
-                type="radio"
-            />
-            <label class="rating-label" for="star-4"
-                ><i class="rating-icon rating-icon-star fa fa-star"></i
-            ></label>
-            <input
-                class="rating-input"
-                name="star"
-                id="star-4"
-                value="4"
-                type="radio"
-            />
-            <label class="rating-label" for="star-5"
-                ><i class="rating-icon rating-icon-star fa fa-star"></i
-            ></label>
-            <input
-                class="rating-input"
-                name="star"
-                id="star-5"
-                value="5"
-                type="radio"
-            />
-        </div>
-        <span class="rating-display"></span>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li> </a
+                    ><a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/navigation/navigation.html"
+                        class="list-items-hover"
+                    >
+                        <li>App Bar</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li> </a
+                    ><a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover"
+                    >
+                        <li>Grid</li>
+                    </a>
+                    <hr />
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1 class="heading-2">Rating</h1>
+                <p class="text-body-lg">
+                    Rating components can be used as read-only badge or in
+                    reviews section. Can be used in reviews section as form too.
+                </p>
+                <hr />
+                <h2 class="heading-3">Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Frating%252Frating.css%2522%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2 class="heading-4">Rating as a input</h2>
+                <p class="text-body-lg text-gutterBottom">
+                    The initial value of the rating component is 0 but once the
+                    user starts using it the value cannot go below 1.
+                </p>
+                <small class="text-subtitle"
+                    >You can use as many stars as you want but there must be at
+                    least 2 stars for this to work.</small
+                >
+                <div class="example-div-sm">
+                    <div class="rating-group">
+                        <input
+                            disabled
+                            checked
+                            class="rating-input rating-input-none"
+                            name="star"
+                            id="star-none"
+                            value="0"
+                            type="radio"
+                        />
+                        <label class="rating-label" for="star-1"
+                            ><i
+                                class="rating-icon rating-icon-star fa fa-star"
+                            ></i
+                        ></label>
+                        <input
+                            class="rating-input"
+                            name="star"
+                            id="star-1"
+                            value="1"
+                            type="radio"
+                        />
+                        <label class="rating-label" for="star-2"
+                            ><i
+                                class="rating-icon rating-icon-star fa fa-star"
+                            ></i
+                        ></label>
+                        <input
+                            class="rating-input"
+                            name="star"
+                            id="star-2"
+                            value="2"
+                            type="radio"
+                        />
+                        <label class="rating-label" for="star-3"
+                            ><i
+                                class="rating-icon rating-icon-star fa fa-star"
+                            ></i
+                        ></label>
+                        <input
+                            class="rating-input"
+                            name="star"
+                            id="star-3"
+                            value="3"
+                            type="radio"
+                        />
+                        <label class="rating-label" for="star-4"
+                            ><i
+                                class="rating-icon rating-icon-star fa fa-star"
+                            ></i
+                        ></label>
+                        <input
+                            class="rating-input"
+                            name="star"
+                            id="star-4"
+                            value="4"
+                            type="radio"
+                        />
+                        <label class="rating-label" for="star-5"
+                            ><i
+                                class="rating-icon rating-icon-star fa fa-star"
+                            ></i
+                        ></label>
+                        <input
+                            class="rating-input"
+                            name="star"
+                            id="star-5"
+                            value="5"
+                            type="radio"
+                        />
+                    </div>
+                    <span class="rating-display"></span>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-group%2522%253E%250A%2509%253Cinput%250A%2509%2509disabled%250A%2509%2509checked%250A%2509%2509class%253D%2522rating-input%2520rating-input-none%2522%250A%2509%2509name%253D%2522star%2522%250A%2509%2509id%253D%2522star-none%2522%250A%2509%2509value%253D%25220%2522%250A%2509%2509type%253D%2522radio%2522%250A%2509%252F%253E%250A%2509%253Clabel%2520class%253D%2522rating-label%2522%2520for%253D%2522star-1%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522rating-icon%2520rating-icon-star%2520fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2509%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509class%253D%2522rating-input%2522%250A%2509%2509name%253D%2522star%2522%250A%2509%2509id%253D%2522star-1%2522%250A%2509%2509value%253D%25221%2522%250A%2509%2509type%253D%2522radio%2522%250A%2509%252F%253E%250A%2509%253Clabel%2520class%253D%2522rating-label%2522%2520for%253D%2522star-2%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522rating-icon%2520rating-icon-star%2520fa%2520fa-star%2522%2520%253E%253C%252Fi%253E%250A%2509%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509class%253D%2522rating-input%2522%250A%2509%2509name%253D%2522star%2522%250A%2509%2509id%253D%2522star-2%2522%250A%2509%2509value%253D%25222%2522%250A%2509%2509type%253D%2522radio%2522%250A%2509%252F%253E%250A%2509%253Clabel%2520class%253D%2522rating-label%2522%2520for%253D%2522star-3%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522rating-icon%2520rating-icon-star%2520fa%2520fa-star%2522%2520%253E%253C%252Fi%253E%250A%2509%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509class%253D%2522rating-input%2522%250A%2509%2509name%253D%2522star%2522%250A%2509%2509id%253D%2522star-3%2522%250A%2509%2509value%253D%25223%2522%250A%2509%2509type%253D%2522radio%2522%250A%2509%252F%253E%250A%2509%253Clabel%2520class%253D%2522rating-label%2522%2520for%253D%2522star-4%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522rating-icon%2520rating-icon-star%2520fa%2520fa-star%2522%2520%253E%253C%252Fi%253E%250A%2509%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509class%253D%2522rating-input%2522%250A%2509%2509name%253D%2522star%2522%250A%2509%2509id%253D%2522star-4%2522%250A%2509%2509value%253D%25224%2522%250A%2509%2509type%253D%2522radio%2522%250A%2509%252F%253E%250A%2509%253Clabel%2520class%253D%2522rating-label%2522%2520for%253D%2522star-5%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522rating-icon%2520rating-icon-star%2520fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2509%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509class%253D%2522rating-input%2522%250A%2509%2509name%253D%2522star%2522%250A%2509%2509id%253D%2522star-5%2522%250A%2509%2509value%253D%25225%2522%250A%2509%2509type%253D%2522radio%2522%250A%2509%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cspan%2520class%253D%2522rating-display%2522%253E%253C%252Fspan%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <p class="text-subtitle">
+                    This Component requires javaScript to function, Add this
+                    script to your html document.
+                </p>
+                <div class="code-snippet-sm">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Frating%252Frating.js%2522%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
         <script src="/Components/rating/rating.js"></script>
+        <script src="/javaScript/doc.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"

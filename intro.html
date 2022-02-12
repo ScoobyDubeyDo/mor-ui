@@ -4,16 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/Components/list/list.css" />
-        <link rel="stylesheet" href="/Components/button/button.css" />
-        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
         <link rel="stylesheet" href="/css/doc.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
+        <link rel="stylesheet" href="/Components/button/button.css" />
         <link
             rel="shortcut icon"
             href="/images/favicon.png"
             type="image/x-icon"
         />
-        <title>MOR | List</title>
+        <title>MOR</title>
     </head>
     <body>
         <nav class="appbar-fixed">
@@ -47,12 +46,11 @@
                 </a>
             </span>
         </nav>
-
         <main class="doc-content">
             <aside class="menu-bar">
                 <ul class="list">
                     <p class="heading-6">Getting Started</p>
-                    <a href="/intro.html" class="list-items-hover">
+                    <a href="/intro.html" class="list-items-hover list-active">
                         <li>Introduction</li>
                     </a>
                     <a
@@ -141,10 +139,11 @@
                     </a>
                     <a
                         href="/Components/list/list.html"
-                        class="list-items-hover list-active"
+                        class="list-items-hover"
                     >
-                        <li>Lists</li> </a
-                    ><a
+                        <li>Lists</li>
+                    </a>
+                    <a
                         href="/Components/grid/grid.html"
                         class="list-items-hover"
                     >
@@ -154,72 +153,51 @@
                 </ul>
             </aside>
             <section class="main-docs">
-                <h1 class="heading-2">List</h1>
-                <p class="text-body-lg">
-                    Lists are a continuous group of text or images. They are
-                    composed of items containing primary and supplemental
-                    actions, which are represented by icons and text. Lists can
-                    be used at so many places, navigation bar, stacked
-                    notifications, article pages, etc.
-                </p>
                 <hr />
-                <h2 class="heading-3">Imports</h2>
-                <div class="code-snippet-sm">
-                    <code>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Flist%252Flist.css%2522%253E"
-                            sandbox="allow-scripts allow-same-origin"
-                        >
-                        </iframe>
-                    </code>
+                <div class="intro-hero">
+                    <p class="heading-1">MOR UI</p>
+                    <p class="heading-6">CODE LESS, STYLE MORE.</p>
                 </div>
-                <hr />
-                <h2 class="heading-4">Horizontal List</h2>
-                <p class="text-body-lg">
-                    A horizontal list is used when you want to list chips or
-                    tabs etc.
-                </p>
+                <div class="intro-body">
+                    <p class="text-body-lg text-gutterBottom">
+                        MOR is an open-source styling framework that helps you
+                        develop a fast and easy user interface. Spend less time
+                        in designing and focus more on logic without putting
+                        much effort into UI.
+                    </p>
+                </div>
+                <div class="intro-body">
+                    <h4 class="heading-3 text-gutterBottom">
+                        Customizing Themes
+                    </h4>
+                    <p class="text-body-lg text-gutterBottom">
+                        Although MOR aims to satisfy the requirements of its
+                        users as much as possible, but sometimes the predefined
+                        styles are not enough.
+                    </p>
+                    <p class="text-body-lg">
+                        To overload the MOR's base classes, users can add their
+                        own classes to existing classes to style them
+                        separately.
+                    </p>
+                </div>
                 <div class="example-div">
-                    <ul class="horizontal-list">
-                        <li><button class="btn-filled-pink">Lorem</button></li>
-                        <li>
-                            <button class="btn-filled-purple">ipsum</button>
-                        </li>
-                        <li><button class="btn-filled-blue">dolor</button></li>
-                        <li><button class="btn-filled-yellow">sit</button></li>
-                    </ul>
+                    <button class="btn-filled-pink my-style">CUSTOMIZED</button>
+
+                    <style>
+                        .my-style {
+                            color: var(--dark);
+                            border: 2px solid var(--dark);
+                        }
+                    </style>
                 </div>
                 <div class="code-snippet">
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522horizontal-list%2522%253E%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-pink%2522%253ELorem%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-purple%2522%253Eipsum%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-blue%2522%253Edolor%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-yellow%2522%253Esit%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-filled-pink%2520my-style%2522%253ECUSTOMIZED%253C%252Fbutton%253E%250A%250A%253Cstyle%253E%250A%2509.my-style%2520%257B%250A%2509%2509color%253A%2520var%28--dark%29%253B%250A%2509%2509border%253A%25202px%2520solid%2520var%28--dark%29%253B%250A%2509%257D%250A%253C%252Fstyle%253E"
                         sandbox="allow-scripts allow-same-origin"
                     >
                     </iframe>
                 </div>
-                <hr />
-                <h2 class="heading-4">Vertical List</h2>
-                <p class="text-body-lg">
-                    All your stacked components like notifications, article
-                    pages, etc. will be created using a vertical list.
-                </p>
-                <div class="example-div">
-                    <ul class="vertical-list">
-                        <li><button class="btn-filled-pink">Lorem</button></li>
-                        <li>
-                            <button class="btn-filled-purple">ipsum</button>
-                        </li>
-                        <li><button class="btn-filled-blue">dolor</button></li>
-                        <li><button class="btn-filled-yellow">sit</button></li>
-                    </ul>
-                </div>
-                <div class="code-snippet">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522vertical-list%2522%253E%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-pink%2522%253ELorem%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-purple%2522%253Eipsum%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-blue%2522%253Edolor%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%250A%2509%253Cli%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn-filled-yellow%2522%253Esit%253C%252Fbutton%253E%250A%2509%253C%252Fli%253E%250A%253C%252Ful%253E"
-                        sandbox="allow-scripts allow-same-origin"
-                    >
-                    </iframe>
-                </div>
-                <hr />
                 <span class="links">
                     <a href="#" class="footer-links"
                         ><i class="fab fa-github-square"></i
@@ -231,6 +209,7 @@
                         ><i class="fab fa-twitter-square"></i
                     ></a>
                 </span>
+                <hr />
             </section>
         </main>
         <script src="/javaScript/doc.js"></script>

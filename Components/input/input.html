@@ -4,8 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./input.css" />
+        <link rel="stylesheet" href="/Components/input/input.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
         <link rel="stylesheet" href="/css/doc.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
         <title>MOR | Input</title>
     </head>
     <body>
@@ -44,6 +50,23 @@
         <main class="doc-content">
             <aside class="menu-bar">
                 <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
                     <a
                         href="/Components/button/button.html"
                         class="list-items-hover"
@@ -54,25 +77,24 @@
                         href="/Components/avatar/avatar.html"
                         class="list-items-hover"
                     >
-                        <li>Avatar</li>
-                    </a>
-                    <a
+                        <li>Avatar</li> </a
+                    ><a
                         href="/Components/badge/badge.html"
                         class="list-items-hover"
                     >
                         <li>Badge</li>
                     </a>
-                    <a
-                        href="/Components/alert/alert.html"
-                        class="list-items-hover"
-                    >
-                        <li>Alert</li>
-                    </a>
+
                     <a
                         href="/Components/card/card.html"
                         class="list-items-hover"
                     >
-                        <li>Card</li>
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
                     </a>
                     <a
                         href="/Components/image/image.html"
@@ -81,16 +103,16 @@
                         <li>Image</li>
                     </a>
                     <a
-                        href="/Components/input/input.html"
-                        class="list-items-hover list-active"
-                    >
-                        <li>Input</li>
-                    </a>
-                    <a
-                        href="/Components/modal/modal.html"
+                        href="/Components/navigation/navigation.html"
                         class="list-items-hover"
                     >
-                        <li>Modal</li>
+                        <li>App Bar</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
                     </a>
                     <a
                         href="/Components/rating/rating.html"
@@ -99,45 +121,57 @@
                         <li>Rating</li>
                     </a>
                     <a
-                        href="/Components/toast/toast.html"
-                        class="list-items-hover"
-                    >
-                        <li>Toast</li>
-                    </a>
-                    <a
                         href="/Components/slider/slider.html"
                         class="list-items-hover"
                     >
                         <li>Slider</li>
                     </a>
                     <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
                         href="/Components/list/list.html"
                         class="list-items-hover"
                     >
-                        <li>Lists</li>
+                        <li>Lists</li> </a
+                    ><a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover"
+                    >
+                        <li>Grid</li>
                     </a>
+                    <hr />
                 </ul>
             </aside>
             <section class="main-docs">
-                <h1>Input</h1>
-                <p>
+                <h1 class="heading-2">Input</h1>
+                <p class="text-body-lg">
                     Input allow users to enter text into a UI. They typically
                     appear in forms and dialogs.
                 </p>
                 <hr />
-                <h2>Imports</h2>
+                <h2 class="heading-3">Imports</h2>
                 <div class="code-snippet-sm">
                     <code>
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Finput%252Finput.css%2522%253E"
                             sandbox="allow-scripts allow-same-origin"
                         >
                         </iframe>
                     </code>
                 </div>
                 <hr />
-                <h2>Labeled Input</h2>
-                <p>
+                <h2 class="heading-4">Labeled Input</h2>
+                <p class="text-body-lg">
                     Label Input has a label that exists at the top of the input
                     field. They may be customized to display an error message
                     and change colour accordingly.

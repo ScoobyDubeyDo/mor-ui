@@ -5,7 +5,7 @@
 .appbar-fixed {
     left: 0;
     top: 0;
-    background: var(--yellow-500);
+    background: var(--gray-400);
     height: 4rem;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
 .appbar-standard,
 .appbar-fixed {
     max-width: 100%;
-    z-index: 1;
+    z-index: 999;
     right: 0;
 }
 

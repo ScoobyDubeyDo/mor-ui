@@ -4,9 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../button/button.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="/Components/button/button.css" />
         <link rel="stylesheet" href="/css/doc.css" />
-        <link rel="stylesheet" href="./card.css" />
+        <link rel="stylesheet" href="/Components/card/card.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
         <title>MOR | Card</title>
     </head>
 
@@ -46,6 +52,23 @@
         <main class="doc-content">
             <aside class="menu-bar">
                 <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
                     <a
                         href="/Components/button/button.html"
                         class="list-items-hover"
@@ -56,25 +79,24 @@
                         href="/Components/avatar/avatar.html"
                         class="list-items-hover"
                     >
-                        <li>Avatar</li>
-                    </a>
-                    <a
+                        <li>Avatar</li> </a
+                    ><a
                         href="/Components/badge/badge.html"
                         class="list-items-hover"
                     >
                         <li>Badge</li>
                     </a>
-                    <a
-                        href="/Components/alert/alert.html"
-                        class="list-items-hover"
-                    >
-                        <li>Alert</li>
-                    </a>
+
                     <a
                         href="/Components/card/card.html"
                         class="list-items-hover list-active"
                     >
-                        <li>Card</li>
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
                     </a>
                     <a
                         href="/Components/image/image.html"
@@ -83,16 +105,16 @@
                         <li>Image</li>
                     </a>
                     <a
-                        href="/Components/input/input.html"
+                        href="/Components/navigation/navigation.html"
                         class="list-items-hover"
                     >
-                        <li>Input</li>
+                        <li>App Bar</li>
                     </a>
                     <a
-                        href="/Components/modal/modal.html"
+                        href="/Components/alert/alert.html"
                         class="list-items-hover"
                     >
-                        <li>Modal</li>
+                        <li>Alert</li>
                     </a>
                     <a
                         href="/Components/rating/rating.html"
@@ -101,16 +123,22 @@
                         <li>Rating</li>
                     </a>
                     <a
-                        href="/Components/toast/toast.html"
-                        class="list-items-hover"
-                    >
-                        <li>Toast</li>
-                    </a>
-                    <a
                         href="/Components/slider/slider.html"
                         class="list-items-hover"
                     >
                         <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
                     </a>
                     <a
                         href="/Components/list/list.html"
@@ -118,33 +146,43 @@
                     >
                         <li>Lists</li>
                     </a>
+                    <a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover"
+                    >
+                        <li>Grid</li>
+                    </a>
+                    <hr />
                 </ul>
             </aside>
+
             <section class="main-docs">
-                <h1>Card</h1>
-                <p>
+                <h1 class="heading-2">Card</h1>
+                <p class="text-body-lg">
                     Cards are surfaces that display content and actions on a
                     single topic. They should be easily scanned to obtain
                     relevant and usable information.
                 </p>
                 <hr />
-                <h2>Imports</h2>
+                <h2 class="heading-3">Imports</h2>
                 <div class="code-snippet-sm">
                     <code>
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253C%21--%2520Placeholder%2520--%253E%250A"
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Fcard%252Fcard.css%2522%253E%250A"
                             sandbox="allow-scripts allow-same-origin"
                         >
                         </iframe>
                     </code>
                 </div>
                 <hr />
-                <h2>Text only Card</h2>
-                <p>
+                <h2 class="heading-4">Text only Card</h2>
+                <p class="text-body-lg text-gutterBottom">
                     This Card contains a title, a descriptive text and also a
                     subtitle.
                 </p>
-                <small>Here card badge is a optional element.</small>
+                <small class="text-subtitle"
+                    >Here card badge is a optional element.</small
+                >
                 <div class="example-div">
                     <div class="card">
                         <div class="card-header">
@@ -170,8 +208,8 @@
                     </iframe>
                 </div>
                 <hr />
-                <h2>Card with dismiss</h2>
-                <p>Closable card with a cross icon.</p>
+                <h2 class="heading-4">Card with dismiss</h2>
+                <p class="text-body-lg">Closable card with a cross icon.</p>
                 <div class="example-div">
                     <div class="card">
                         <div class="card-header">
@@ -205,8 +243,8 @@
                     </iframe>
                 </div>
                 <hr />
-                <h2>Card with text overlay</h2>
-                <p>Card with text over the image.</p>
+                <h2 class="heading-4">Card with text overlay</h2>
+                <p class="text-body-lg">Card with text over the image.</p>
                 <div class="example-div">
                     <div class="card">
                         <div class="card-body">
@@ -261,7 +299,7 @@
                     </iframe>
                 </div>
                 <hr />
-                <h2>Horizontal card</h2>
+                <h2 class="heading-4">Horizontal card</h2>
                 <div class="example-div">
                     <div class="card">
                         <div class="card-badge">Quote</div>

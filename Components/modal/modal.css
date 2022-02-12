@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    z-index: 999;
 }
 
 .modal-closed {
@@ -23,6 +23,7 @@
     position: relative;
     margin: 20px;
     max-height: 80vh;
+    overflow: auto;
     min-width: 15rem;
 }
 
@@ -51,6 +52,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    align-items: center;
     border-bottom: 1px solid #e5e5e5;
 }
 

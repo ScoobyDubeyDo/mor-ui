@@ -4,11 +4,216 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="slider.css" />
+        <link rel="stylesheet" href="/Components/slider/slider.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
         <title>MOR | Slider</title>
     </head>
     <body>
-        <input type="range" min="0" max="100" value="0" class="input-range" />
-        <script src="./slider.js"></script>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li> </a
+                    ><a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/navigation/navigation.html"
+                        class="list-items-hover"
+                    >
+                        <li>App Bar</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li> </a
+                    ><a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover"
+                    >
+                        <li>Grid</li>
+                    </a>
+                    <hr />
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1 class="heading-2">Slider</h1>
+                <p class="text-body-lg">
+                    Sliders reflect a range of values along a bar, from which
+                    users may select a single value. They are ideal for
+                    adjusting settings such as volume, brightness, or applying
+                    image filters.
+                </p>
+                <hr />
+                <h2 class="heading-3">Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Fslider%252Fslider.css%2522%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2 class="heading-4">Continuous sliders</h2>
+                <p class="text-body-lg">
+                    Continuous sliders allow users to select a value along a
+                    subjective range.
+                </p>
+
+                <div class="example-div-sm">
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="23"
+                        class="input-range"
+                    />
+                </div>
+                <div class="code-snippet-sm">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cinput%250A%2509type%253D%2522range%2522%250A%2509min%253D%25220%2522%250A%2509max%253D%2522100%2522%250A%2509value%253D%252223%2522%250A%2509class%253D%2522input-range%2522%250A%252F%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/Components/rating/rating.js"></script>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

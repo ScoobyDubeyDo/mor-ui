@@ -4,44 +4,264 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./modal.css" />
-        <link rel="stylesheet" href="../button/button.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
+        <link rel="stylesheet" href="/Components/button/button.css" />
+        <link rel="stylesheet" href="/Components/modal/modal.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
         <title>MOR | Modal</title>
     </head>
     <body>
-        <div class="modal-sm" id="modal-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title heading-3">Modal title</h1>
-                        <button class="icon-btn-purple modal-close-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="text-body-lg">
-                            Lorem ipsum dolor Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Maiores ducimus sint
-                            rror dignissimos! Cupiditate aliquam excepturi quos
-                            similique recusandae asp
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn-filled-purple">
-                            Save changes
-                        </button>
-                        <button class="btn-outlined-purple modal-close-btn">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
 
-        <button class="btn-filled-yellow modal-handler" for="modal-1">
-            open
-        </button>
-        <script src="./modal.js"></script>
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li> </a
+                    ><a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/navigation/navigation.html"
+                        class="list-items-hover"
+                    >
+                        <li>App Bar</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                    <a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover"
+                    >
+                        <li>Grid</li>
+                    </a>
+                    <hr />
+                </ul>
+            </aside>
+
+            <section class="main-docs">
+                <h1 class="heading-2">Modal</h1>
+                <p class="text-body-lg">
+                    MOR's JavaScript modal is used to add dialog boxes to your
+                    site for lightboxes, user notifications, or completely
+                    personalized content.
+                </p>
+                <hr />
+                <h2 class="heading-3">Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Fmodal%252Fmodal.css%2522%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2 class="heading-4">Pop-up Modal</h2>
+                <p class="text-body-lg">
+                    Modals are positioned over everything else in the document
+                    and they prevent the page from scrolling. The only way to
+                    close it is with the close button on the modal pop-up.
+                </p>
+                <div class="example-div">
+                    <div class="modal-sm" id="modal-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title heading-3">
+                                        Modal title
+                                    </h1>
+                                    <button
+                                        class="icon-btn-purple modal-close-btn"
+                                    >
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-body-lg">
+                                        Lorem ipsum dolor Lorem ipsum dolor sit
+                                        amet consectetur, adipisicing elit.
+                                        Maiores ducimus sint rror dignissimos!
+                                        Cupiditate aliquam excepturi quos
+                                        similique recusandae asp
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn-filled-purple"
+                                    >
+                                        Save changes
+                                    </button>
+                                    <button
+                                        class="btn-outlined-purple modal-close-btn"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="btn-filled-yellow modal-handler"
+                        for="modal-1"
+                    >
+                        open
+                    </button>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=474.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-green%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-red%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-blue%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Csvg%2520class%253D%2522icon%2522%253E%253C%252Fsvg%253E%250A%2509%253Cspan%2520class%253D%2522number-badge-purple%2522%253E66%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <p class="text-subtitle">
+                    This Component requires javaScript to function, Add this
+                    script to your html document.
+                </p>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cscript%2520src%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Fmodal%252Fmodal.js%2522%253E%253C%252Fscript%253E%250A"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/Components/modal/modal.js"></script>
+        <script src="/javaScript/doc.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"

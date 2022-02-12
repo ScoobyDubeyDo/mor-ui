@@ -4,18 +4,297 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./grid.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
+        <link rel="stylesheet" href="/Components/button/button.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
+        <link rel="stylesheet" href="/Components/grid/grid.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
         <title>MOR | Grid</title>
     </head>
     <body>
-        <div class="grid grid-2">
-            <div>asas</div>
-            <div>kjkj</div>
-            <div>lkkjlkj</div>
-            <div>lkkjlkj</div>
-            <div>lkkjlkj</div>
-            <div>lkkjlkj</div>
-            <div>lkjjl</div>
-        </div>
+        <nav class="appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li> </a
+                    ><a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/navigation/navigation.html"
+                        class="list-items-hover"
+                    >
+                        <li>App Bar</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                    <a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>Grid</li>
+                    </a>
+                    <hr />
+                </ul>
+            </aside>
+            <section class="main-docs">
+                <h1 class="heading-2">Grid</h1>
+                <p class="text-body-lg">
+                    Grid is a versatile layout to make different sections on a
+                    webpage. For now, there are three grid layouts available:
+                    two, three & four column layouts.
+                </p>
+                <hr />
+                <h2 class="heading-3">Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Fgrid%252Fgrid.css%2522%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2 class="heading-4">Simplified Grid</h2>
+                <p class="text-body-lg text-gutterBottom">
+                    To use the Simplified Grid you just need to add class name
+                    grid to the container or parent element, followed by varient
+                    name: grid-2, grid-3, or grid-4.
+                </p>
+                <div class="example-div">
+                    <div style="width: 100%">
+                        <div
+                            class="grid grid-2"
+                            style="background-color: #2e8b5688"
+                        >
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 1
+                            </div>
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 2
+                            </div>
+                        </div>
+                        <div
+                            class="grid grid-3"
+                            style="background-color: #416ecf88"
+                        >
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 1
+                            </div>
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 2
+                            </div>
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 3
+                            </div>
+                        </div>
+                        <div
+                            class="grid grid-4"
+                            style="background-color: #e25f3788"
+                        >
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 1
+                            </div>
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 2
+                            </div>
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 3
+                            </div>
+                            <div
+                                style="
+                                    border: 1px solid black;
+                                    padding: 0.7rem 1rem 0.7rem 1rem;
+                                "
+                            >
+                                Child 4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-2%2522%253E%250A%2509%253Cdiv%253EChild%25201%253C%252Fdiv%253E%250A%2509%253Cdiv%253EChild%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522grid%2520grid-3%2522%253E%250A%2509%253Cdiv%253EChild%25201%253C%252Fdiv%253E%250A%2509%253Cdiv%253EChild%25202%253C%252Fdiv%253E%250A%2509%253Cdiv%253EChild%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522grid%2520grid-4%2522%253E%250A%2509%253Cdiv%253EChild%25201%253C%252Fdiv%253E%250A%2509%253Cdiv%253EChild%25202%253C%252Fdiv%253E%250A%2509%253Cdiv%253EChild%25203%253C%252Fdiv%253E%250A%2509%253Cdiv%253EChild%25204%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

@@ -5,29 +5,232 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/Components/button/button.css" />
-        <link rel="stylesheet" href="./navigation.css" />
-        <title>MOR | Navigation</title>
+        <link rel="stylesheet" href="/Components/navigation/navigation.css" />
+        <link rel="stylesheet" href="/Components/text-utilities/text.css" />
+        <link rel="stylesheet" href="/css/doc.css" />
+        <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/x-icon"
+        />
+        <title>MOR | App Bar</title>
     </head>
     <body>
-        <div class="appbar-standard">
-            <div class="appbar-menu">
-                <button class="icon-btn-pink">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <div class="appbar-hero"><h3>LOGO</h3></div>
-            <nav class="appbar-btns">
-                <button class="icon-btn-pink">
-                    <i class="fas fa-download"></i>
-                </button>
-                <button class="icon-btn-pink">
-                    <i class="fas fa-print"></i>
-                </button>
-                <button class="icon-btn-pink">
-                    <i class="fas fa-bookmark"></i>
-                </button>
-            </nav>
-        </div>
+        <nav class="doc-appbar-fixed">
+            <a href="/index.html" class="logo">
+                <img src="/images/text-logo.png" />
+            </a>
+            <span class="links">
+                <a
+                    href="https://github.com/aman-can"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/dubey-aman/"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://twitter.com/ScoobyDubeyDo"
+                    target="_blank"
+                    class="social-links"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a class="ham-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </span>
+        </nav>
+
+        <main class="doc-content">
+            <aside class="menu-bar">
+                <ul class="list">
+                    <p class="heading-6">Getting Started</p>
+                    <a href="/intro.html" class="list-items-hover">
+                        <li>Introduction</li>
+                    </a>
+                    <a
+                        href="/Components/Shared/colors.html"
+                        class="list-items-hover"
+                    >
+                        <li>Colors</li>
+                    </a>
+                    <a
+                        href="/Components/text-utilities/text.html"
+                        class="list-items-hover"
+                    >
+                        <li>Typography</li>
+                    </a>
+                    <p class="heading-6">Components</p>
+                    <a
+                        href="/Components/button/button.html"
+                        class="list-items-hover"
+                    >
+                        <li>Button</li>
+                    </a>
+                    <a
+                        href="/Components/avatar/avatar.html"
+                        class="list-items-hover"
+                    >
+                        <li>Avatar</li> </a
+                    ><a
+                        href="/Components/badge/badge.html"
+                        class="list-items-hover"
+                    >
+                        <li>Badge</li>
+                    </a>
+
+                    <a
+                        href="/Components/card/card.html"
+                        class="list-items-hover"
+                    >
+                        <li>Card</li> </a
+                    ><a
+                        href="/Components/modal/modal.html"
+                        class="list-items-hover"
+                    >
+                        <li>Modal</li>
+                    </a>
+                    <a
+                        href="/Components/image/image.html"
+                        class="list-items-hover"
+                    >
+                        <li>Image</li>
+                    </a>
+                    <a
+                        href="/Components/navigation/navigation.html"
+                        class="list-items-hover list-active"
+                    >
+                        <li>App Bar</li>
+                    </a>
+                    <a
+                        href="/Components/alert/alert.html"
+                        class="list-items-hover"
+                    >
+                        <li>Alert</li>
+                    </a>
+                    <a
+                        href="/Components/rating/rating.html"
+                        class="list-items-hover"
+                    >
+                        <li>Rating</li>
+                    </a>
+                    <a
+                        href="/Components/slider/slider.html"
+                        class="list-items-hover"
+                    >
+                        <li>Slider</li>
+                    </a>
+                    <a
+                        href="/Components/input/input.html"
+                        class="list-items-hover"
+                    >
+                        <li>Input</li>
+                    </a>
+                    <a
+                        href="/Components/toast/toast.html"
+                        class="list-items-hover"
+                    >
+                        <li>Toast</li>
+                    </a>
+                    <a
+                        href="/Components/list/list.html"
+                        class="list-items-hover"
+                    >
+                        <li>Lists</li>
+                    </a>
+                    <a
+                        href="/Components/grid/grid.html"
+                        class="list-items-hover"
+                    >
+                        <li>Grid</li>
+                    </a>
+                    <hr />
+                </ul>
+            </aside>
+
+            <section class="main-docs">
+                <h1 class="heading-2">App Bar</h1>
+                <p class="text-body-lg">
+                    MOR's JavaScript modal is used to add dialog boxes to your
+                    site for lightboxes, user notifications, or completely
+                    personalized content.
+                </p>
+                <hr />
+                <h2 class="heading-3">Imports</h2>
+                <div class="code-snippet-sm">
+                    <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmor-ui.vercel.app%252FComponents%252Fnavigation%252Fnavigation.css%2522%253E"
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+                    </code>
+                </div>
+                <hr />
+                <h2 class="heading-4">App Bar</h2>
+                <p class="text-body-lg">
+                    App bar also sometimes known as a navigation bar is used to
+                    navigate through web apps or websites. This navigation
+                    component is responsive. It is a hamburger menu on medium
+                    and small devices.
+                </p>
+                <div
+                    class="example-div"
+                    style="
+                        flex-direction: column;
+                        align-content: stretch;
+                        align-items: stretch;
+                    "
+                >
+                    <div class="appbar-standard" style="position: relative">
+                        <div class="appbar-menu">
+                            <button class="icon-btn-pink">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="appbar-hero"><h3>LOGO</h3></div>
+                        <div class="appbar-btns">
+                            <button class="icon-btn-pink">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <button class="icon-btn-pink">
+                                <i class="fas fa-print"></i>
+                            </button>
+                            <button class="icon-btn-pink">
+                                <i class="fas fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=twilight&wt=none&l=htmlmixed&width=800.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=135%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522appbar-standard%2522%253E%250A%2509%253Cdiv%2520class%253D%2522appbar-menu%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522icon-btn-pink%2522%253E%250A%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2509%2509%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522appbar-hero%2522%253E%250A%2520%2520%2520%2520%2509%253Ch3%253ELOGO%253C%252Fh3%253E%250A%2520%2520%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522appbar-btns%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522icon-btn-pink%2522%253E%250A%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-download%2522%253E%253C%252Fi%253E%250A%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522icon-btn-pink%2522%253E%250A%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-print%2522%253E%253C%252Fi%253E%250A%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522icon-btn-pink%2522%253E%250A%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-bookmark%2522%253E%253C%252Fi%253E%250A%2509%2509%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </div>
+                <hr />
+                <span class="links">
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+            </section>
+        </main>
+        <script src="/javaScript/doc.js"></script>
         <script
             src="https://kit.fontawesome.com/0c3127d83e.js"
             crossorigin="anonymous"
