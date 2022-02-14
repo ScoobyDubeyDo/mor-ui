@@ -3,12 +3,19 @@
 
 .card {
     background: var(--light);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     padding: 0.5rem;
+    cursor: pointer;
     max-width: 23rem;
+    border: 1px solid var(--gray-400);
 }
 
-.card-badge,
+.card-badge-blue,
+.card-badge-red,
+.card-badge-green,
+.card-badge-purple,
+.card-badge-orange,
+.card-badge-pink,
+.card-badge-yellow,
 .card {
     display: inline-block;
 }
@@ -17,7 +24,13 @@
 .card-overlay-text,
 .card-side-image,
 .card-top-image,
-.card-badge,
+.card-badge-blue,
+.card-badge-red,
+.card-badge-green,
+.card-badge-purple,
+.card-badge-orange,
+.card-badge-pink,
+.card-badge-yellow,
 .card-body,
 .card {
     border-radius: 5px;
@@ -25,16 +38,14 @@
 
 .card,
 .card-body,
+.card-body-horizontal,
 .card-image-overlay {
     position: relative;
 }
 
-.card-body-horizontal:hover,
-.card-body:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    filter: brightness(95%);
-    background: var(--gray-400);
+.card:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border: 1px solid var(--gray-600);
 }
 
 .card-subtitle,
@@ -54,6 +65,7 @@
 .card-btns,
 .card-header,
 .card-icon-btns,
+.card-side-content,
 .card-body-horizontal {
     display: flex;
 }
@@ -78,17 +90,16 @@
 
 .card-icon-btns,
 .card-btns {
-    gap: 0.5rem;
-    flex-basis: 50%;
-}
-
-.card-icon-btns {
-    justify-content: flex-end;
+    gap: 1rem;
+    max-width: 100%;
     flex-grow: 1;
+    justify-content: flex-end;
 }
 
 .card-side-image,
 .card-top-image {
+    object-position: center;
+    min-height: 100px;
     object-fit: cover;
 }
 
@@ -98,7 +109,13 @@
 }
 
 .card-overlay-text,
-.card-badge {
+.card-badge-blue,
+.card-badge-red,
+.card-badge-green,
+.card-badge-purple,
+.card-badge-orange,
+.card-badge-pink,
+.card-badge-yellow {
     position: absolute;
 }
 
@@ -109,21 +126,44 @@
     bottom: 2%;
 }
 
+.card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+}
+
 .card-overlay-text > * {
     color: var(--light);
 }
 
+.card-side-content,
+.card-actions,
+.card-body-horizontal {
+    flex-wrap: wrap;
+}
+.card-actions,
+.card-body-horizontal {
+    gap: 0.5rem;
+}
+
 .card-side-image {
-    width: 8rem;
-    min-height: 8rem;
+    width: min(100%, 8rem);
+    flex-grow: 1;
 }
 
 .card-side-content {
-    width: 15rem;
+    flex-grow: 1;
+    align-content: center;
+    width: min(100%, 10rem);
 }
 
-.card-badge {
-    background: var(--blue-600);
+.card-badge-blue,
+.card-badge-red,
+.card-badge-green,
+.card-badge-purple,
+.card-badge-orange,
+.card-badge-pink,
+.card-badge-yellow {
     text-align: center;
     padding: 0.2rem;
     top: 0;
@@ -131,8 +171,34 @@
     z-index: 2;
 }
 
-.card-header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5rem 0;
+.card-badge-blue {
+    background: var(--blue-600);
+}
+
+.card-badge-red {
+    background: var(--red-600);
+    color: var(--light);
+}
+
+.card-badge-purple {
+    background: var(--purple-600);
+    color: var(--light);
+}
+
+.card-badge-green {
+    background: var(--green-400);
+    color: var(--light);
+}
+
+.card-badge-orange {
+    background: var(--orange-600);
+}
+
+.card-badge-pink {
+    background: var(--pink-400);
+    color: var(--light);
+}
+
+.card-badge-yellow {
+    background: var(--yellow-600);
 }
