@@ -221,8 +221,7 @@ nav {
 
 .color-box {
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -241,7 +240,7 @@ hr {
     margin: 1rem 0 0 2rem;
 }
 
-.example-div-sm,
+.example-div-colors,
 .example-div {
     box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
         rgb(27 31 35 / 15%) 0px 0px 0px 1px;
@@ -259,8 +258,9 @@ hr {
     flex-wrap: wrap;
 }
 
-.example-div-sm {
-    height: auto;
+.example-div-colors {
+    gap: unset;
+    padding: 1rem 10rem;
 }
 
 .btn-main,
@@ -400,15 +400,16 @@ hr {
     }
 
     .menu-bar {
-        transition: all 0.3s ease;
-        top: -190vh;
+        transition: all 0.6s ease;
+        top: -400vh;
         width: auto;
-        height: max-content;
         box-shadow: 0px 11px 22px -25px var(--dark);
         right: 0;
         z-index: 3;
     }
-
+    .example-div-colors {
+        padding: 1rem;
+    }
     .ham-burger {
         display: inline-block;
     }
