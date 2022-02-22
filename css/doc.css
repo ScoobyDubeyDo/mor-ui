@@ -259,8 +259,13 @@ hr {
 }
 
 .example-div-colors {
-    gap: unset;
-    padding: 1rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    padding: 2rem;
+    grid-auto-flow: row;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .btn-main,
