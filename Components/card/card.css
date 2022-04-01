@@ -40,8 +40,9 @@
 
 .card,
 .card-body,
-.card-body-horizontal,
-.card-image-overlay {
+.card-hover,
+.card-image-overlay,
+.card-body-horizontal {
     position: relative;
 }
 
