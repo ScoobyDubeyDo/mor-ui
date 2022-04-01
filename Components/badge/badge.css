@@ -8,11 +8,7 @@
     position: relative;
 }
 
-.icon {
-    font-size: 3rem;
-    color: var(--dark);
-}
-
+.number-badge-yellow,
 .number-badge-green,
 .number-badge-red,
 .number-badge-blue,
@@ -29,6 +25,9 @@
     font-weight: 600;
     color: var(--light);
     right: -8px;
+    padding: 0.3rem;
+    aspect-ratio: 1/1;
+    font-size: 0.7rem;
 }
 
 .number-badge-green {
@@ -45,6 +44,10 @@
 
 .number-badge-red {
     background: var(--red-500);
+}
+
+.number-badge-yellow {
+    background: var(--yellow-500);
     color: var(--dark);
 }
 
