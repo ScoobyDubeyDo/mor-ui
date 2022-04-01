@@ -44,7 +44,7 @@ Copy and paste the code into the head tag of your html document on top of all th
 
 #### MOR is supplied with these Components :
 
--   [Text Utilities](https://mor-ui.vercel.app/Components/text-utilities/text.html)
+-   [Text Utilities](https://mor-ui.vercel.app/Components/utilities/utils.html)
 -   [Button](https://mor-ui.vercel.app/Components/button/button.html)
 -   [Avatar](https://mor-ui.vercel.app/Components/avatar/avatar.html)
 -   [Badge](https://mor-ui.vercel.app/Components/badge/badge.html)

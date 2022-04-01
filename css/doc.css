@@ -29,7 +29,7 @@ body {
     box-shadow: 0px 0px 0px 100000vh var(--light);
 }
 
-nav {
+.doc-nav {
     background: var(--light);
     height: 5rem;
     display: flex;
@@ -37,10 +37,6 @@ nav {
     box-shadow: 0px 11px 22px -25px var(--dark);
     justify-content: space-between;
     padding: 1rem;
-}
-
-.doc-appbar-fixed,
-.appbar-fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -120,6 +116,7 @@ nav {
     background-position-y: center;
     background-size: auto 80%;
     background-attachment: fixed;
+    margin-top: 5rem;
     height: calc(100vh - 5rem);
 }
 
@@ -153,7 +150,7 @@ nav {
     text-decoration: none;
     list-style: none;
     color: var(--dark);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     width: calc(100% - 0.5rem);
     display: flex;
     cursor: pointer;
@@ -166,7 +163,8 @@ nav {
 }
 
 .list-items-hover:hover {
-    background: #00000010;
+    background: linear-gradient(48deg, transparent, #00000010);
+
     font-weight: 600;
     color: rgba(72, 33, 88, 1);
     padding: 10px 20px;
@@ -186,6 +184,14 @@ nav {
     border-radius: 50%;
 }
 
+.list-active {
+    color: rgba(72, 33, 88, 1);
+    background: linear-gradient(48deg, #00000010, transparent);
+    font-weight: 600;
+}
+.list-active:hover {
+    background: linear-gradient(48deg, transparent, #00000010, transparent);
+}
 .list-active::after {
     content: "";
     width: 15px;
@@ -211,8 +217,14 @@ nav {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-radius: 50px;
-    box-shadow: 20px 20px 19px #bebebe42, -20px -20px 19px #ffffff;
+    border: 1rem solid;
+    border-image: linear-gradient(
+        48deg,
+        rgba(188, 96, 131, 1) 1%,
+        rgba(149, 75, 117, 1) 33%,
+        rgba(72, 33, 88, 1) 67%
+    );
+    border-image-slice: 1;
 }
 
 .intro-body {
@@ -324,6 +336,8 @@ hr {
     );
     color: var(--light);
     display: flex;
+    justify-content: space-evenly;
+    height: calc(100vh - 5rem);
 }
 
 .main-dark > section {
@@ -351,15 +365,11 @@ hr {
     margin: 2rem 0;
     overflow: hidden;
     border-radius: 24px;
+    height: 300px;
 }
 
 .code-snippet-sm {
-    height: auto;
-    padding: auto;
-}
-
-.code-snippet {
-    height: 300px;
+    height: 150px;
 }
 
 .code-snippet iframe,
