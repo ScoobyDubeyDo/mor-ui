@@ -1,15 +1,18 @@
 @import url(../Shared/reset.css);
+@import url(/Components/Shared/colors.css);
 
 .avatar-circle-sm,
 .avatar-circle-md,
 .avatar-circle-lg {
     border-radius: 50%;
+    outline: 1px solid var(--dark);
 }
 
 .avatar-squircle-sm,
 .avatar-squircle-md,
 .avatar-squircle-lg {
     border-radius: 0.7rem;
+    outline: 1px solid var(--dark);
 }
 
 .avatar-squircle-sm,
