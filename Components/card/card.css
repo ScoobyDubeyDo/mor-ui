@@ -1,12 +1,13 @@
 @import url(../Shared/reset.css);
 @import url(../Shared/colors.css);
 
+.card-hover,
 .card {
     background: var(--light);
     padding: 0.5rem;
-    cursor: pointer;
     max-width: 23rem;
     border: 1px solid var(--gray-400);
+    cursor: default;
 }
 
 .card-badge-blue,
@@ -31,6 +32,7 @@
 .card-badge-orange,
 .card-badge-pink,
 .card-badge-yellow,
+.card-hover,
 .card-body,
 .card {
     border-radius: 5px;
@@ -43,9 +45,10 @@
     position: relative;
 }
 
-.card:hover {
+.card-hover:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border: 1px solid var(--gray-600);
+    cursor: pointer;
 }
 
 .card-subtitle,
@@ -138,6 +141,7 @@
 
 .card-side-content,
 .card-actions,
+.card-btns,
 .card-body-horizontal {
     flex-wrap: wrap;
 }
