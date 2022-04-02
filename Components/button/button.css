@@ -199,7 +199,7 @@
 
 .icon-btn-ghost:hover,
 .icon-btn-ghost-sm:hover {
-    background: var(--gray-400);
+    background: #f1f5f93b;
 }
 
 .icon-btn-white,
