@@ -135,3 +135,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.divider-light,
+.divider-dark {
+    margin: 0.5rem 0;
+    display: block;
+}
+
+.divider-light {
+    border-bottom: 1px solid var(--light);
+}
+
+.divider-dark {
+    border-bottom: 1px solid var(--dark);
+}
