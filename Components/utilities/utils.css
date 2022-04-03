@@ -136,16 +136,32 @@
     align-items: center;
 }
 
-.divider-light,
-.divider-dark {
+.divider-light-horizontal,
+.divider-dark-horizontal {
     margin: 0.5rem 0;
     display: block;
+    width: 100%;
 }
 
-.divider-light {
+.divider-light-horizontal {
     border-bottom: 1px solid var(--light);
 }
 
-.divider-dark {
+.divider-dark-horizontal {
     border-bottom: 1px solid var(--dark);
+}
+
+.divider-light-vertical,
+.divider-dark-vertical {
+    margin: 0 0.5rem;
+    display: block;
+    height: 100%;
+}
+
+.divider-light-vertical {
+    border-left: 1px solid var(--light);
+}
+
+.divider-dark-vertical {
+    border-left: 1px solid var(--dark);
 }
