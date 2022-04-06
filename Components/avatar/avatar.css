@@ -6,6 +6,8 @@
 .avatar-circle-lg {
     border-radius: 50%;
     outline: 1px solid var(--dark);
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .avatar-squircle-sm,
@@ -13,6 +15,8 @@
 .avatar-squircle-lg {
     border-radius: 0.7rem;
     outline: 1px solid var(--dark);
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .avatar-squircle-sm,
