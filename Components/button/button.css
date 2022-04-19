@@ -8,13 +8,15 @@
 .btn-filled-orange,
 .btn-filled-pink,
 .btn-filled-yellow,
+.btn-filled-teal,
 .btn-outlined-red,
 .btn-outlined-green,
 .btn-outlined-blue,
 .btn-outlined-purple,
 .btn-outlined-orange,
 .btn-outlined-pink,
-.btn-outlined-yellow {
+.btn-outlined-yellow,
+.btn-outlined-teal {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -85,6 +87,27 @@
 .icon-btn-green:active,
 .icon-btn-green-sm:active {
     background: var(--green-500);
+}
+
+.btn-filled-teal,
+.icon-btn-teal,
+.icon-btn-teal-sm,
+.btn-outlined-teal:hover {
+    background: var(--teal-400);
+}
+
+.btn-filled-teal:hover,
+.btn-outlined-teal:hover,
+.icon-btn-teal:hover,
+.icon-btn-teal-sm:hover {
+    background: var(--teal-600);
+}
+
+.btn-filled-teal:active,
+.btn-outlined-teal:active,
+.icon-btn-teal:active,
+.icon-btn-teal-sm:active {
+    background: var(--teal-500);
 }
 
 .btn-outlined-blue:hover,
@@ -222,6 +245,11 @@
     border: var(--green-400) solid 2px;
 }
 
+.btn-filled-teal,
+.btn-outlined-teal {
+    border: var(--teal-400) solid 2px;
+}
+
 .btn-filled-blue,
 .btn-outlined-blue {
     border: var(--blue-400) solid 2px;
@@ -260,6 +288,7 @@
 .icon-btn-pink-sm,
 .icon-btn-green-sm,
 .icon-btn-yellow-sm,
+.icon-btn-teal-sm,
 .icon-btn-white,
 .icon-btn-ghost,
 .icon-btn-red,
@@ -268,7 +297,8 @@
 .icon-btn-orange,
 .icon-btn-pink,
 .icon-btn-green,
-.icon-btn-yellow {
+.icon-btn-yellow,
+.icon-btn-teal {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +317,8 @@
 .icon-btn-orange,
 .icon-btn-pink,
 .icon-btn-green,
-.icon-btn-yellow {
+.icon-btn-yellow,
+.icon-btn-teal {
     min-width: 3em;
     min-height: 3em;
 }
@@ -300,7 +331,8 @@
 .icon-btn-orange-sm,
 .icon-btn-pink-sm,
 .icon-btn-green-sm,
-.icon-btn-yellow-sm {
+.icon-btn-yellow-sm,
+.icon-btn-teal-sm {
     min-width: 2.2em;
     min-height: 2.2em;
 }
