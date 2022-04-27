@@ -11,6 +11,8 @@
 }
 
 .card-badge-blue,
+.card-badge-teal,
+.card-badge-ghost,
 .card-badge-red,
 .card-badge-green,
 .card-badge-purple,
@@ -26,6 +28,8 @@
 .card-side-image,
 .card-top-image,
 .card-badge-blue,
+.card-badge-teal,
+.card-badge-ghost,
 .card-badge-red,
 .card-badge-green,
 .card-badge-purple,
@@ -114,6 +118,8 @@
 
 .card-overlay-text,
 .card-badge-blue,
+.card-badge-teal,
+.card-badge-ghost,
 .card-badge-red,
 .card-badge-green,
 .card-badge-purple,
@@ -163,6 +169,8 @@
 }
 
 .card-badge-blue,
+.card-badge-teal,
+.card-badge-ghost,
 .card-badge-red,
 .card-badge-green,
 .card-badge-purple,
@@ -176,8 +184,18 @@
     z-index: 2;
 }
 
-.card-badge-blue {
+.card-badge-blue{
     background: var(--blue-600);
+}
+
+.card-badge-ghost {
+    padding: unset;
+    background-color: transparent;
+}
+
+.card-badge-teal {
+    background: var(--teal-600);
+    color: var(--light);
 }
 
 .card-badge-red {
